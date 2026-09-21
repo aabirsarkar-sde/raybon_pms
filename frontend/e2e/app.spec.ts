@@ -1,18 +1,20 @@
 import { expect, test, type Page } from "@playwright/test"
 
-import { login, openPlant, plantId, rowTexts, section, startEditing } from "./helpers"
+import { creds, login, openPlant, plantId, rowTexts, section, startEditing } from "./helpers"
 
 const rowIds = (page: Page, slug: string) =>
   section(page, slug).locator("tbody tr[data-row-id]").evaluateAll((els) => els.map((e) => e.getAttribute("data-row-id")))
 
 // ====================================================================== authentication
 test.describe("authentication", () => {
-  test("unauthenticated users are sent to sign-in; bad tokens are rejected", async ({ page }) => {
+  test("unauthenticated users are sent to sign-in; wrong passwords are rejected", async ({ page }) => {
     await page.goto("/plants")
     await expect(page).toHaveURL(/\/login\?next=%2Fplants/)
-    await page.fill("#token", "not-a-real-token")
+    await page.fill("#username", creds("viewer").username)
+    await page.fill("#password", "definitely-wrong")
     await page.click("button[type=submit]")
-    await expect(page.getByText("Invalid or expired token")).toBeVisible()
+    await expect(page.getByTestId("login-error")).toHaveText("Invalid username or password")
+    await expect(page.locator("#password")).toHaveValue("")
   })
 
   test("sign in lands on the dashboard; sign out ends the session", async ({ page }) => {

@@ -92,7 +92,8 @@ export function PlantFrame({ id, children }: { id: number; children: React.React
             <span className="truncate">{c.display_name ?? c.name}</span>
           </nav>
           <div className="mt-1 flex flex-wrap items-start gap-x-4 gap-y-2">
-            <div className="min-w-0 flex-1">
+            {/* min width makes the actions wrap below the title on phones instead of squeezing it */}
+            <div className="min-w-[min(100%,18rem)] flex-1">
               <h1 className="text-lg leading-snug font-semibold tracking-tight md:text-xl" data-testid="plant-title">
                 {c.display_name ?? c.name}
               </h1>

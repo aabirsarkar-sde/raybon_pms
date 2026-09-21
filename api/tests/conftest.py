@@ -16,12 +16,14 @@ import pytest
 from fastapi.testclient import TestClient
 from psycopg.conninfo import make_conninfo
 
+from pdm_api.accounts import hash_password
 from pdm_api.config import Settings, hash_token, load_tokens
 from pdm_api.main import create_app
 
 ROOT = Path(__file__).resolve().parents[2]
 ADMIN_DSN = os.environ.get("PDM_TEST_ADMIN_DSN")
 TOKENS = {"viewer": "t-viewer", "editor": "t-editor", "admin": "t-admin"}
+PASSWORDS = {"alice": "alice-pass-1", "eddie": "eddie-pass-1", "vera": "vera-pass-1"}
 
 if not ADMIN_DSN:
     pytest.exit("Set PDM_TEST_ADMIN_DSN to a PostgreSQL superuser DSN", returncode=2)
@@ -46,7 +48,12 @@ def template_db():
     seed = _load_seed_module()
     with _admin(name) as c:
         c.execute((ROOT / "database/schema.sql").read_text())
+        for m in sorted((ROOT / "database/migrations").glob("*.sql")):
+            c.execute(m.read_text())
         seed.run_import(c, seed.load_records())
+        for username, role in (("alice", "admin"), ("eddie", "editor"), ("vera", "viewer")):
+            c.execute("INSERT INTO app_users (username, role, password_hash) VALUES (%s, %s, %s)",
+                      (username, role, hash_password(PASSWORDS[username])))
         c.execute((ROOT / "database/roles.sql").read_text())
     yield name
     with _admin() as c:

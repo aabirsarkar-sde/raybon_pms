@@ -2,8 +2,25 @@
 
 export type Role = "viewer" | "editor" | "admin"
 export interface User {
+  /** Username (or API token name). */
   name: string
+  username: string
+  display_name: string | null
   role: Role
+  auth: "password" | "token"
+}
+
+export interface Account {
+  id: number
+  username: string
+  display_name: string | null
+  role: Role
+  is_active: boolean
+  locked: boolean
+  last_login_at: string | null
+  password_changed_at: string
+  created_at: string
+  updated_at: string
 }
 
 export type Origin = "legacy" | "app"

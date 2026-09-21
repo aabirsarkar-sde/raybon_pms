@@ -1,18 +1,22 @@
 import { startSession } from "@/lib/auth/session"
-import { whoAmI } from "@/lib/server/pdm"
+import { apiLogin } from "@/lib/server/pdm"
 
 export async function POST(request: Request) {
-  let token: unknown
+  let body: { username?: unknown; password?: unknown }
   try {
-    token = ((await request.json()) as { token?: unknown }).token
+    body = (await request.json()) as typeof body
   } catch {
     return Response.json({ detail: "Invalid request" }, { status: 400 })
   }
-  if (typeof token !== "string" || token.trim() === "" || token.length > 500) {
-    return Response.json({ detail: "Enter your access token" }, { status: 400 })
+  const { username, password } = body
+  if (typeof username !== "string" || typeof password !== "string" || !username.trim() || !password) {
+    return Response.json({ detail: "Enter your username and password" }, { status: 400 })
   }
-  const result = await whoAmI(token.trim())
+  if (username.length > 100 || password.length > 256) {
+    return Response.json({ detail: "Invalid username or password" }, { status: 401 })
+  }
+  const result = await apiLogin(username.trim(), password)
   if (!result.ok) return Response.json({ detail: result.message }, { status: result.status })
-  await startSession(token.trim())
+  await startSession(result.token, result.expiresAt)
   return Response.json(result.user)
 }

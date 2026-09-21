@@ -19,7 +19,8 @@ def test_auth_required_and_roles(client):
     assert client.get(f"{P}/plants").status_code == 401
     assert client.get(f"{P}/plants", headers={"Authorization": "Bearer nope"}).status_code == 401
     assert client.get(f"{P}/plants", headers=auth("viewer")).status_code == 200
-    assert client.get(f"{P}/me", headers=auth("editor")).json() == {"name": "editor-user", "role": "editor"}
+    me = client.get(f"{P}/me", headers=auth("editor")).json()
+    assert (me["name"], me["role"], me["auth"]) == ("editor-user", "editor", "token")
     pid = plant_by_legacy(client, 1)["id"]
     assert client.patch(f"{P}/plants/{pid}", json={"capacity": "x"}, headers=auth("viewer")).status_code == 403
     assert client.post(f"{P}/plants", json={"name": "x"}, headers=auth("editor")).status_code == 403
@@ -357,4 +358,5 @@ def test_api_role_cannot_touch_provenance(api_conn, admin_conn):
 
 
 def test_seed_does_not_flood_change_log(admin_conn):
-    assert admin_conn.execute("SELECT count(*) FROM change_log").fetchone()[0] == 0
+    # (account creation for the test users is audited on purpose; plant data import is not)
+    assert admin_conn.execute("SELECT count(*) FROM change_log WHERE table_name <> 'app_users'").fetchone()[0] == 0

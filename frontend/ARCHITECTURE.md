@@ -17,8 +17,9 @@ npm install
 npm run dev                       # or: npm run build && npm start
 ```
 
-The API must be running. See `../api/API.md`; the API needs its tokens file.
-To sign in, paste an API token created with `python ../api/tools/make_token.py <name> <role>`.
+The API must be running (see `../api/API.md`) with migration `001_user_accounts.sql` applied.
+Sign in with a username and password. Admins manage accounts on the **Users** page. Create the first
+admin with `python ../api/tools/create_user.py <username> --role admin`.
 
 ## Structure
 
@@ -26,12 +27,13 @@ To sign in, paste an API token created with `python ../api/tools/make_token.py <
 src/
 ├── proxy.ts                        redirect visitors without a session to /login
 ├── app/
-│   ├── login/                      token sign-in (replaceable by SSO)
+│   ├── login/                      username/password sign-in (replaceable by SSO)
 │   ├── api/auth/{login,logout}     create / end the session (httpOnly cookie)
 │   ├── api/pdm/[...path]           authenticated proxy to FastAPI
 │   └── (app)/                      authenticated area (layout validates the session via GET /me)
 │       ├── page.tsx                dashboard
 │       ├── plants/                 list + search
+│       ├── users/                  user & role administration (admin)
 │       └── plants/[id]/            detail frame (sticky header, tabs)
 │           ├── page.tsx            plant data (all sections, editing)
 │           ├── history/            audit history
@@ -99,7 +101,7 @@ src/
 End-to-end tests (Playwright) run against the full stack with a freshly seeded database:
 
 ```bash
-export PDM_TOKEN_VIEWER=… PDM_TOKEN_EDITOR=… PDM_TOKEN_ADMIN=…
+export PDM_USER_VIEWER=… PDM_PASS_VIEWER=… PDM_USER_EDITOR=… PDM_PASS_EDITOR=… PDM_USER_ADMIN=… PDM_PASS_ADMIN=…
 PDM_E2E_BASE_URL=http://localhost:3000 npm run test:e2e
 ```
 
@@ -115,3 +117,14 @@ The 24 scenarios cover:
 - the legacy source view;
 - API error states;
 - mobile layout without horizontal overflow.
+
+`e2e/mobile.spec.ts` repeats the layout checks on six device profiles: 320px Android, Pixel 7,
+iPhone SE, iPhone 15 Pro Max, iPhone landscape and iPad Mini. The iPhone and iPad profiles run in
+WebKit. Each check covers every page plus open menus, drawers and dialogs, and asserts:
+- nothing scrolls sideways;
+- overlays fit the screen;
+- icons keep their shape;
+- inputs use ≥16px text, so iOS doesn't zoom in on focus.
+
+When testing against a plain-HTTP server, start Next.js with `PDM_COOKIE_SECURE=false`, because
+Safari drops Secure cookies over HTTP. Production should be served over HTTPS.

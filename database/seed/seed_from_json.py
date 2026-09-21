@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[2]
 EXPORT_DIR = ROOT / "plantdata_export"
 STRUCTURED_DIR = EXPORT_DIR / "structured"
 SCHEMA_SQL = ROOT / "database" / "schema.sql"
+MIGRATIONS_DIR = ROOT / "database" / "migrations"
 
 STAGE_FIELDS = ["stage_1", "stage_2", "stage_3", "stage_4", "stage_5"]
 
@@ -298,6 +299,9 @@ def main():
     with psycopg.connect(args.dsn) as conn:
         if args.apply_schema:
             conn.execute(SCHEMA_SQL.read_text(encoding="utf-8"))
+            for m in sorted(MIGRATIONS_DIR.glob("*.sql")):
+                conn.execute(m.read_text(encoding="utf-8"))
+                print(f"Applied migration {m.name}")
             conn.commit()
             print("Applied schema.sql")
         if not args.verify_only:

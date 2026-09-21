@@ -4,28 +4,12 @@ from dataclasses import dataclass
 
 import psycopg
 from fastapi import Depends, HTTPException, Request
-from psycopg.rows import dict_row
-from psycopg_pool import ConnectionPool
 
 from .auth import require
-from .config import Principal, Settings
+from .config import Principal
+from .pool import get_conn, make_pool  # noqa: F401  (re-exported)
 
 _CONTROL = re.compile(r"[\x00-\x08\x0a-\x1f\x7f]")
-
-
-def make_pool(settings: Settings) -> ConnectionPool:
-    return ConnectionPool(
-        settings.database_url,
-        min_size=settings.pool_min_size,
-        max_size=settings.pool_max_size,
-        open=False,
-        kwargs={"autocommit": True, "row_factory": dict_row},
-    )
-
-
-def get_conn(request: Request):
-    with request.app.state.pool.connection() as conn:
-        yield conn
 
 
 @contextmanager

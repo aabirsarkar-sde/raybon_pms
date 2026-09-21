@@ -1,6 +1,6 @@
 "use client"
 
-import { Factory, History, LayoutDashboard, List, Moon, Sun } from "lucide-react"
+import { Factory, History, LayoutDashboard, List, Moon, Sun, Users } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
@@ -25,19 +25,22 @@ import {
 } from "@/components/ui/sidebar"
 import { Separator } from "@/components/ui/separator"
 import { useRecentPlants } from "@/hooks/use-recent-plants"
+import { useSession } from "@/lib/auth/session-context"
 
 import { PlantSwitcher } from "./plant-switcher"
 import { UserMenu } from "./user-menu"
 
 const NAV = [
-  { href: "/", label: "Dashboard", icon: LayoutDashboard, match: (p: string) => p === "/" },
-  { href: "/plants", label: "Plants", icon: List, match: (p: string) => p.startsWith("/plants") },
+  { href: "/", label: "Dashboard", icon: LayoutDashboard, match: (p: string) => p === "/", admin: false },
+  { href: "/plants", label: "Plants", icon: List, match: (p: string) => p.startsWith("/plants"), admin: false },
+  { href: "/users", label: "Users", icon: Users, match: (p: string) => p.startsWith("/users"), admin: true },
 ]
 
 function AppSidebar() {
   const pathname = usePathname()
   const { items: recent } = useRecentPlants()
   const { setOpenMobile } = useSidebar()
+  const { can } = useSession()
   const close = () => setOpenMobile(false)
 
   return (
@@ -63,7 +66,7 @@ function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {NAV.map((n) => (
+              {NAV.filter((n) => !n.admin || can("admin")).map((n) => (
                 <SidebarMenuItem key={n.href}>
                   <SidebarMenuButton asChild isActive={n.match(pathname)} tooltip={n.label}>
                     <Link href={n.href} onClick={close}>

@@ -4,9 +4,8 @@ import psycopg
 from fastapi import APIRouter, Depends, HTTPException, Query, Response
 
 from . import repository as repo
-from .auth import current_principal, require
+from .auth import require
 from .collections import PLANT_COLLECTIONS, Collection
-from .config import Principal
 from .db import WriteContext, get_conn, read_tx, writer
 from .models import ModulePatch, PlantCreate, PlantPatch, Reorder, ZoneCreate, build_models
 
@@ -24,11 +23,6 @@ def _changes(body) -> dict:
 
 
 # ============================================================== meta
-@router.get("/me", tags=["meta"])
-def me(principal: Principal = Depends(current_principal)):
-    return {"name": principal.name, "role": principal.role}
-
-
 @router.get("/zones", tags=["zones"], dependencies=[Viewer])
 def list_zones(conn: psycopg.Connection = Depends(get_conn)):
     return {"items": conn.execute(

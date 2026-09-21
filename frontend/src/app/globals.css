@@ -149,6 +149,18 @@
   html {
     @apply font-sans;
   }
+  /* Icons keep their square shape inside flex rows on narrow screens. */
+  svg.lucide {
+    flex-shrink: 0;
+  }
+  /* Touch devices: iOS Safari zooms the page in when a field with text under 16px is focused. */
+  @media (pointer: coarse) {
+    input:not([type="checkbox"]):not([type="radio"]),
+    textarea,
+    select {
+      font-size: 16px !important;
+    }
+  }
 }
 @layer utilities {
   .tabular { font-variant-numeric: tabular-nums; }

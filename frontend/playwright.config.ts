@@ -20,5 +20,18 @@ export default defineConfig({
     trace: "retain-on-failure",
     screenshot: "only-on-failure",
   },
-  projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"], viewport: { width: 1440, height: 900 } } }],
+  projects: [
+    { name: "chromium", testIgnore: /mobile\.spec/, use: { ...devices["Desktop Chrome"], viewport: { width: 1440, height: 900 } } },
+    // Phone / tablet layout checks. iPhone and iPad profiles run in WebKit (Safari's engine).
+    {
+      name: "mobile-small-android-320",
+      testMatch: /mobile\.spec/,
+      use: { ...devices["Galaxy S5"], viewport: { width: 320, height: 640 } },
+    },
+    { name: "mobile-pixel-7", testMatch: /mobile\.spec/, use: { ...devices["Pixel 7"] } },
+    { name: "mobile-iphone-se", testMatch: /mobile\.spec/, use: { ...devices["iPhone SE"] } },
+    { name: "mobile-iphone-15-pro-max", testMatch: /mobile\.spec/, use: { ...devices["iPhone 15 Pro Max"] } },
+    { name: "mobile-iphone-landscape", testMatch: /mobile\.spec/, use: { ...devices["iPhone 13 landscape"] } },
+    { name: "tablet-ipad-mini", testMatch: /mobile\.spec/, use: { ...devices["iPad Mini"] } },
+  ],
 })

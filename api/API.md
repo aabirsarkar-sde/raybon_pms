@@ -292,22 +292,39 @@ GET /api/v1/plants/1/legacy
 
 ## 4. Authentication and authorization
 
-**What's in place now:**
-- **Bearer tokens.** Each user or service gets a random token (`python api/tools/make_token.py <name> <role>`).
-  The server stores only the token's SHA-256 hash, in the JSON file named by `PDM_API_TOKENS_FILE`.
-  Tokens are revoked by removing their line and restarting the server.
-- **Roles, cumulative** (each role includes the permissions of the ones before it):
-  - **viewer**: every `GET`.
-  - **editor**: plus editing plants, modules, design parameters and equipment (add, edit, delete, reorder).
-  - **admin**: plus creating and deleting app-created plants, and creating zones.
-- **Named identity.** The token's `name` is written to `change_log.changed_by`, so every change is
-  attributed to someone.
-- **Database layer.** Independently of the API roles, the `pdm_api` database role limits what the
-  API process itself can do (section 7).
+**Username and password sign-in with roles (RBAC).** Accounts live in `app_users`, created by
+migration `database/migrations/001_user_accounts.sql`.
 
-**Planned upgrade:** once the frontend exists, put the API behind the organisation's single sign-on
-(OIDC/SAML) and map groups to the same three roles. Only `auth.py` changes; the role checks and audit
-attribution stay as they are. Use HTTPS in any deployment.
+- **Signing in.** `POST /auth/login {username, password}` returns a session token (`pdms_…`),
+  valid for 12 hours (`PDM_SESSION_HOURS`). Send it as `Authorization: Bearer <token>`.
+  - Only the token's SHA-256 is stored.
+  - Usernames are case-insensitive.
+  - `POST /auth/logout` revokes the session.
+- **Passwords** are stored as scrypt hashes and must be at least 8 characters, and different from the username.
+  - `POST /auth/change-password` changes your own password and signs out your other sessions.
+- **Lockout.** Five wrong passwords lock the account for 15 minutes (the API returns 429). An admin
+  can unlock it sooner. Wrong username and wrong password give the same message.
+- **Roles** are cumulative, and each role includes the ones before it:
+  - **viewer**: read everything.
+  - **editor**: plus edit plant data.
+  - **admin**: plus create and delete app-created plants, create zones, and manage users.
+  - The role is read from the database on every request, so role changes and deactivation apply at once.
+- **User administration** (admin only):
+  - `GET /users` lists the users.
+  - `POST /users {username, display_name?, role, password}` creates one.
+  - `PATCH /users/{id} {display_name?, role?, is_active?, unlock?}` edits one.
+  - `POST /users/{id}/password {new_password}` resets a password, unlocks the account and signs the user out.
+- **Safety rules:**
+  - Accounts are deactivated, never deleted, so history stays attributed.
+  - Admins can't deactivate themselves or change their own role.
+  - The API always keeps at least one active admin.
+- **Audit.** Account changes are recorded in `change_log` (`table_name = 'app_users'`). Password hashes
+  and session tokens are never logged.
+- **Service tokens (optional).** A token file (`PDM_API_TOKENS_FILE`, created with `tools/make_token.py`)
+  still works for scripts. People should use accounts.
+- **First admin / password recovery:**
+  `DATABASE_URL=… python api/tools/create_user.py <username> --role admin` prompts for the password.
+  If the user already exists, it resets the password and unlocks and reactivates the account.
 
 ## 5. Validation rules
 

@@ -74,7 +74,7 @@ export function Dashboard() {
 
   return (
     <div className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
-      <PageHeader title={`Welcome, ${user.name.replace(/@.*/, "")}`} description="Overview of all plants in the Plant Data Management System.">
+      <PageHeader title={`Welcome, ${user.display_name ?? user.name}`} description="Overview of all plants in the Plant Data Management System.">
         <Button asChild>
           <Link href="/plants">
             Browse plants <ArrowRight />

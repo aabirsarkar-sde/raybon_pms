@@ -2,16 +2,24 @@ import { expect, type Page } from "@playwright/test"
 
 export type Role = "viewer" | "editor" | "admin"
 
-export function token(role: Role): string {
-  const t = process.env[`PDM_TOKEN_${role.toUpperCase()}`]
-  if (!t) throw new Error(`Set PDM_TOKEN_${role.toUpperCase()}`)
-  return t
+/** Test accounts: PDM_USER_<ROLE> / PDM_PASS_<ROLE> (e.g. PDM_USER_ADMIN, PDM_PASS_ADMIN). */
+export function creds(role: Role): { username: string; password: string } {
+  const username = process.env[`PDM_USER_${role.toUpperCase()}`]
+  const password = process.env[`PDM_PASS_${role.toUpperCase()}`]
+  if (!username || !password) throw new Error(`Set PDM_USER_${role.toUpperCase()} and PDM_PASS_${role.toUpperCase()}`)
+  return { username, password }
+}
+
+export async function signIn(page: Page, username: string, password: string) {
+  await page.goto("/login")
+  await page.fill("#username", username)
+  await page.fill("#password", password)
+  await page.click("button[type=submit]")
 }
 
 export async function login(page: Page, role: Role) {
-  await page.goto("/login")
-  await page.fill("#token", token(role))
-  await page.click("button[type=submit]")
+  const c = creds(role)
+  await signIn(page, c.username, c.password)
   await page.waitForURL("/")
 }
 

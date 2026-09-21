@@ -28,4 +28,14 @@ GRANT INSERT, UPDATE, DELETE ON
     filters, filter_values, hp_pump_accessory_groups, hp_pump_accessory_entries
 TO pdm_api;
 
+-- Sign-in: the API creates sessions and maintains accounts (migration 001).
+-- No DELETE on app_users: accounts are deactivated, not deleted.
+DO $$
+BEGIN
+    IF to_regclass('public.app_users') IS NOT NULL THEN
+        GRANT INSERT, UPDATE ON app_users TO pdm_api;
+        GRANT INSERT, UPDATE, DELETE ON app_sessions TO pdm_api;
+    END IF;
+END $$;
+
 GRANT USAGE ON ALL SEQUENCES IN SCHEMA public TO pdm_api;

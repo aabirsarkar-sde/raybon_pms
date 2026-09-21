@@ -9,31 +9,35 @@ ROLES = ("viewer", "editor", "admin")
 
 @dataclass(frozen=True)
 class Principal:
-    name: str
+    name: str                      # username (or token name); recorded as changed_by in the audit log
     role: str
+    user_id: int | None = None     # set for signed-in users; None for API tokens
+    display_name: str | None = None
+    session_id: int | None = None
 
 
 @dataclass
 class Settings:
     database_url: str
-    tokens: dict[str, Principal]  # sha256(token) hex digest -> principal
+    tokens: dict[str, Principal]  # sha256(token) hex digest -> principal (optional service tokens)
     pool_min_size: int = 1
     pool_max_size: int = 10
+    session_hours: float = 12
 
     @classmethod
     def from_env(cls) -> "Settings":
         dsn = os.environ.get("DATABASE_URL")
         if not dsn:
             raise RuntimeError("DATABASE_URL is not set")
+        # Optional: static API tokens for scripts/service accounts. People sign in with a username and password.
         tokens_file = os.environ.get("PDM_API_TOKENS_FILE")
-        if not tokens_file:
-            raise RuntimeError("PDM_API_TOKENS_FILE is not set (see tools/make_token.py)")
-        entries = json.loads(Path(tokens_file).read_text(encoding="utf-8"))
+        entries = json.loads(Path(tokens_file).read_text(encoding="utf-8")) if tokens_file else []
         return cls(
             database_url=dsn,
             tokens=load_tokens(entries),
             pool_min_size=int(os.environ.get("PDM_DB_POOL_MIN", 1)),
             pool_max_size=int(os.environ.get("PDM_DB_POOL_MAX", 10)),
+            session_hours=float(os.environ.get("PDM_SESSION_HOURS", 12)),
         )
 
 

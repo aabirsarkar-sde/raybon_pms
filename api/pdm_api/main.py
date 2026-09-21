@@ -18,6 +18,7 @@ from psycopg import errors as pgerr
 
 from .config import Settings
 from .db import make_pool
+from .account_routes import router as account_router
 from .routes import router
 
 log = logging.getLogger("pdm_api")
@@ -80,5 +81,6 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             conn.execute("SELECT 1")
         return {"status": "ok"}
 
+    app.include_router(account_router)
     app.include_router(router)
     return app
