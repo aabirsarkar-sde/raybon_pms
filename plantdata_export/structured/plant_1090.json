@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1090,
+  "source": {
+    "raw_file": "raw/plant_1090.html",
+    "metadata_file": "metadata/plant_1090.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1090",
+    "http_status": 200,
+    "dropdown_label": "Ganesh Polychem Ltd. - 3054 (SPRO)  - 250"
+  },
+  "plant": {
+    "name": "ganesh polychem ltd.",
+    "serial_number": "3054",
+    "capacity": "250",
+    "site_contact_number": "9574818592"
+  },
+  "zone": "Vapi",
+  "modules": {
+    "stage_1": "6",
+    "stage_2": "6",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "12.5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "μS/CM",
+      "unit_raw": "(μS/CM)",
+      "value": "490"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "350"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "NA"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "NA"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "11.2"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "μS/CM",
+      "unit_raw": "(μS/CM)",
+      "value": "100"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "50"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "NA"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "NA"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "90"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6.3"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "4.45"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-14",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "11",
+      "motor_amp": "19.8"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "4.45"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "4.45"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536x1"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536x1"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-043"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM221C40T"
+    },
+    {
+      "name": "Module 1",
+      "make": "SCHNEIDER",
+      "model": "TM3DI32K"
+    },
+    {
+      "name": "Module 2",
+      "make": "SCHNEIDER",
+      "model": "TM3DI32K"
+    },
+    {
+      "name": "Module 3",
+      "make": "SCHNEIDER",
+      "model": "TM3DO32TK"
+    },
+    {
+      "name": "Module 4",
+      "make": "SCHNEIDER",
+      "model": "TM3DO8R"
+    },
+    {
+      "name": "Module 5",
+      "make": "SCHNEIDER",
+      "model": "TM3AO4"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 5,
+    "instruments": 3,
+    "hmi_and_plc": 7,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

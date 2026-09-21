@@ -1,0 +1,9 @@
+{
+  "plant_id": "1177",
+  "dropdown_name": "Wockhardt Limited - 1817 (PTRO)  - 300W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1177",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1177.html",
+  "plant_name": "Plant wockhardt limited",
+  "serial_number": "1817"
+}

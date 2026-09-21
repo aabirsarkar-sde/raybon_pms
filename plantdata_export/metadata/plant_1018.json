@@ -1,0 +1,9 @@
+{
+  "plant_id": "1018",
+  "dropdown_name": "Aarti Industries Limited - Neo Division - 2403 (HPRO)  - 50W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1018",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1018.html",
+  "plant_name": "Plant aarti industries limited - neo division",
+  "serial_number": "2403"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1084",
+  "dropdown_name": "Aarti Phase 1 (Custome Division) - 3266 (SPRO)  - 364",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1084",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1084.html",
+  "plant_name": "Plant aarti phase 1 (custome division)",
+  "serial_number": "3266"
+}

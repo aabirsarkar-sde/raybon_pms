@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1108,
+  "source": {
+    "raw_file": "raw/plant_1108.html",
+    "metadata_file": "metadata/plant_1108.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1108",
+    "http_status": 200,
+    "dropdown_label": "UPL Limited - Unit 5 - 3256 (STPTRO)  - 1250"
+  },
+  "plant": {
+    "name": "upl limited - unit 5",
+    "serial_number": "3256",
+    "capacity": "1250",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "28",
+    "stage_2": "20",
+    "stage_3": "76",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "62.5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "62.5"
+    },
+    {
+      "position": 3,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "14000"
+    },
+    {
+      "position": 4,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "10000"
+    },
+    {
+      "position": 5,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "43.75"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1000"
+    },
+    {
+      "position": 7,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "500"
+    },
+    {
+      "position": 8,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "70"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "KSB",
+      "pump_model": "ETN80-65-200CC",
+      "motor_make": "KSB",
+      "motor_kw": "15",
+      "motor_amp": "27.5"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "OSNA",
+      "pump_model": "NMV65/215/6",
+      "motor_make": "OSNA",
+      "motor_kw": "110",
+      "motor_amp": "177"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "DICKOW",
+      "pump_model": "50/210",
+      "motor_make": "DICKOW",
+      "motor_kw": "30",
+      "motor_amp": "64"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "50/210",
+      "motor_make": "DICKOW",
+      "motor_kw": "30",
+      "motor_amp": "64"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "DICKOW",
+      "pump_model": "50/210",
+      "motor_make": "DICKOW",
+      "motor_kw": "18.5",
+      "motor_amp": "33"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "KSB",
+      "pump_model": "ETN80-65-160",
+      "motor_make": "KSB",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "FE183",
+      "pump_make": "NA",
+      "pump_model": "NA",
+      "motor_make": "Crompton & Greaves",
+      "motor_kw": "3.7",
+      "motor_amp": "8"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Ansi class#300",
+      "model": "2\"(F)16 KV"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-10 / MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": null
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": null
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "9900"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "9900"
+    },
+    {
+      "name": "Feed ORP Meter",
+      "make": "Georg Fischer",
+      "model": "9900"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "9900"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM221C4OT"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "A-1000"
+    }
+  ],
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 7,
+    "instruments": 9,
+    "hmi_and_plc": 2,
+    "vfd": 3,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

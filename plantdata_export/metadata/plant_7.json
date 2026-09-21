@@ -1,0 +1,9 @@
+{
+  "plant_id": "7",
+  "dropdown_name": "Concord Biotech Ltd. - Dholka - 2989 (HPRO)  - 40W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=7",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_7.html",
+  "plant_name": "Plant concord biotech ltd. - dholka",
+  "serial_number": "2989"
+}

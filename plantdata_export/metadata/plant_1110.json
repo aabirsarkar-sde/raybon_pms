@@ -1,0 +1,9 @@
+{
+  "plant_id": "1110",
+  "dropdown_name": "UPL Limited  - Unit 2 - 3628 (SPRO)  - 27",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1110",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1110.html",
+  "plant_name": "Plant upl limited - unit 2",
+  "serial_number": "3628"
+}

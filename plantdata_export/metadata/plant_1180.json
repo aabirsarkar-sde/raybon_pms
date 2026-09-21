@@ -1,0 +1,9 @@
+{
+  "plant_id": "1180",
+  "dropdown_name": "Nocil Limited - 3946 (SPRO)  - 279W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1180",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1180.html",
+  "plant_name": "Plant nocil limited",
+  "serial_number": "3946"
+}

@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1122,
+  "source": {
+    "raw_file": "raw/plant_1122.html",
+    "metadata_file": "metadata/plant_1122.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1122",
+    "http_status": 200,
+    "dropdown_label": "Cadila Pharmaceuticals Ltd. - 1887 (HPRO)  - 90W"
+  },
+  "plant": {
+    "name": "cadila pharmaceuticals ltd.",
+    "serial_number": "1887",
+    "capacity": "90w",
+    "site_contact_number": "9081817951"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "05 PT",
+    "stage_2": "17 PT",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "4.5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM\t)",
+      "value": "56000"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "40000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "4000"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "750"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "2.11"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM\t)",
+      "value": "5000"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "2500"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "250"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "-"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "47"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "KIRON HYDRA",
+      "pump_model": "FTT 4-60",
+      "motor_make": "FTT",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "HYDRACELL",
+      "pump_model": "WARNERG 35",
+      "motor_make": "LHP",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "NCB HX 26/210",
+      "motor_make": "LHP",
+      "motor_kw": "11",
+      "motor_amp": "22"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CM 5-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.84",
+      "motor_amp": "2"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CM 5-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.2",
+      "motor_amp": "2"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P1"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "THERMO ALFA 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "THERMO ALFA 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "9900"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": "2.5 KV. PSL 203"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "ALLEN BRADLEY MICRO LOGIC 1400",
+      "model": "1766L32BXB"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "ALLEN BREDLY",
+      "model": "C 400"
+    },
+    {
+      "name": "Module 1",
+      "make": "ALLEN BREDLEY",
+      "model": "1762-IQ8"
+    },
+    {
+      "name": "Module 2",
+      "make": "ALLEN BREDLEY",
+      "model": "1762OB16"
+    },
+    {
+      "name": "Module 3",
+      "make": "ALLEN BREDLEY",
+      "model": "1762IF4"
+    },
+    {
+      "name": "Module 4",
+      "make": "ALLEN BREDLEY",
+      "model": "1762IF4"
+    },
+    {
+      "name": "Module 5",
+      "make": "ALLEN BREDLEY",
+      "model": "1762IF4"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V 1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "NA",
+      "model": "EJECTOR"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "GRUNDFOSE",
+      "model": "D03"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR PULLEY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "125 X 4"
+        },
+        {
+          "label": "Tapper",
+          "value": "2012"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP PULLY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "200 X 4"
+        },
+        {
+          "label": "Tapper",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "PULSATION DAMPER",
+      "entries": [
+        {
+          "label": null,
+          "value": "0.75 LTR"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "group": "V-Belt",
+      "entries": [
+        {
+          "label": null,
+          "value": "SPAX 1500 X 4NOS"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "2472",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\" X 1NOS",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 5,
+    "instruments": 6,
+    "hmi_and_plc": 7,
+    "vfd": 1,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 4,
+    "filters": 2
+  }
+}

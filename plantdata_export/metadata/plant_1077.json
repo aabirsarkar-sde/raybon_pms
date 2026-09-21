@@ -1,0 +1,9 @@
+{
+  "plant_id": "1077",
+  "dropdown_name": "Aarti Industries Limited - 2896 (HybridA)  - 200",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1077",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1077.html",
+  "plant_name": "Plant aarti industries limited",
+  "serial_number": "2896"
+}

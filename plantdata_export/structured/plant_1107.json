@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1107,
+  "source": {
+    "raw_file": "raw/plant_1107.html",
+    "metadata_file": "metadata/plant_1107.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1107",
+    "http_status": 200,
+    "dropdown_label": "UPL Limited - Unit 5 - 2287 (PTRO)  - 250"
+  },
+  "plant": {
+    "name": "upl limited - unit 5",
+    "serial_number": "2287",
+    "capacity": "250",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "15",
+    "stage_2": "14",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "11.4"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "4800"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "3000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "250"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "400"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "7.38"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "300"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "150"
+    },
+    {
+      "position": 10,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "65"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3.0",
+      "motor_amp": "6.3"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4.0",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-7",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11.2"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-17",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-6",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-6",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    },
+    {
+      "pump_code": "PK183",
+      "pump_make": "NA",
+      "pump_model": null,
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    }
+  ],
+  "instruments": null,
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "ALLEN BRADLEY",
+      "model": "1762L24bwo"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "ALLEN BRADLEY",
+      "model": "1762L24bwo"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "J-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PVDF",
+      "model": "3/4\""
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "GRUNDFOS",
+      "model": "DMB-5"
+    },
+    {
+      "dosing_pump_for": "SMBS",
+      "make": "GRUNDFOS",
+      "model": "DMB-5"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3672",
+        "FRP",
+        "1",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Bag Filter",
+      "values": [
+        "4272",
+        "FRP",
+        "1 NOS.",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 4,
+      "name": "D/A Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 8,
+    "instruments": null,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": null,
+    "filters": 4
+  }
+}

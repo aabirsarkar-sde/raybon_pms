@@ -1,0 +1,9 @@
+{
+  "plant_id": "1096",
+  "dropdown_name": "TAGROS CHEMICALS LTD\t\t\t\t - 2047 (HPRO)  - 72",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1096",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1096.html",
+  "plant_name": "Plant tagros chemicals ltd",
+  "serial_number": "2047"
+}

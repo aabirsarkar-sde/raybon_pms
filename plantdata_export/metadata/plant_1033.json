@@ -1,0 +1,9 @@
+{
+  "plant_id": "1033",
+  "dropdown_name": "Alkyl Amines Chemicals Limited - 3430 (PTRO)  - 200W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1033",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1033.html",
+  "plant_name": "Plant alkyl amines chemicals limited",
+  "serial_number": "3430"
+}

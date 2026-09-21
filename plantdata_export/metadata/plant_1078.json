@@ -1,0 +1,9 @@
+{
+  "plant_id": "1078",
+  "dropdown_name": "Exemed Pharmaceuticals Pvt. Ltd.  - 3148 (PTRO)  - 30",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1078",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1078.html",
+  "plant_name": "Plant exemed pharmaceuticals pvt. ltd.",
+  "serial_number": "3148"
+}

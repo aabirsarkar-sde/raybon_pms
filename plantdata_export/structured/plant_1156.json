@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1156,
+  "source": {
+    "raw_file": "raw/plant_1156.html",
+    "metadata_file": "metadata/plant_1156.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1156",
+    "http_status": 200,
+    "dropdown_label": "Sun Pharmaceuticals Ltd - 1835 (PTRO)  - 140"
+  },
+  "plant": {
+    "name": "sun pharmaceuticals ltd",
+    "serial_number": "1835",
+    "capacity": "140",
+    "site_contact_number": "9376447917"
+  },
+  "zone": "Panoli",
+  "modules": {
+    "stage_1": "8(PT)",
+    "stage_2": "9(PT)",
+    "stage_3": "9(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "26"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "7"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "11200-16800"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "8000-12000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "700-1000"
+    },
+    {
+      "position": 5,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "4.9"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1500"
+    },
+    {
+      "position": 8,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "750"
+    },
+    {
+      "position": 9,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100-200"
+    },
+    {
+      "position": 10,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "70"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.5",
+      "motor_amp": "3"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "HYDRACELL",
+      "pump_model": "G-35",
+      "motor_make": "CGL",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "SHAKTI",
+      "pump_model": "QF 12-25",
+      "motor_make": "SHAKTI",
+      "motor_kw": "4.0",
+      "motor_amp": "9.5"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "SP 9-21 N",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.37",
+      "motor_amp": "1"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 2751"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "GXU 3512"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "ABB",
+      "model": "AC 5560"
+    },
+    {
+      "name": "VFD",
+      "make": "ABB",
+      "model": "AC 5560"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "PSMA10100PP"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "SPA 160*4A"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "SPA 200*4A"
+        },
+        {
+          "label": "TAPPER",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "Pulsation Damper",
+          "value": "0.35 LTR"
+        },
+        {
+          "label": "V-Belt",
+          "value": "SPAX 1500*4"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "PAINTER",
+        "3072",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 6,
+    "instruments": 5,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 2
+  }
+}

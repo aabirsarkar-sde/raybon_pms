@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1038,
+  "source": {
+    "raw_file": "raw/plant_1038.html",
+    "metadata_file": "metadata/plant_1038.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1038",
+    "http_status": 200,
+    "dropdown_label": "Aarti Industries Ltd. - Saffron Div - 3120 (SPRO)  - 483W"
+  },
+  "plant": {
+    "name": "aarti industries ltd. - saffron div",
+    "serial_number": "3120",
+    "capacity": "483w",
+    "site_contact_number": "7486016244"
+  },
+  "zone": "Dahej",
+  "modules": {
+    "stage_1": "5(SP)",
+    "stage_2": "10(SP)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "15"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "12.7"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "6790"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "4850"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "100"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "<100"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "<20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "0"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "600"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "300 MAX"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "<10 MAX"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "0"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "80"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131_01",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    },
+    {
+      "pump_code": "PK131_02",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    },
+    {
+      "pump_code": "PP1601_01",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-17",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PP1601_02",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-17",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PK162_01",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK162_02",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Emerson",
+      "model": "8750WDMT2A/FNSAD20CA1M4"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Emerson",
+      "model": "8750WDMT2A/FNSAD20CA1M4"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Emerson",
+      "model": "ROSEMOUNT 1056"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Emerson",
+      "model": "ROSEMOUNT 1056"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Emerson",
+      "model": "396P-02-10-55"
+    },
+    {
+      "name": "ORP Meter",
+      "make": "Emerson",
+      "model": "396P-02-10-55"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "Emerson",
+      "model": "NA"
+    },
+    {
+      "name": "Flow Indicator",
+      "make": "GEORG FISCHER",
+      "model": "Float Type"
+    },
+    {
+      "name": "Level Switch",
+      "make": "Pune Techtrol",
+      "model": "DS-AJPP1MSWW"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "Switzer",
+      "model": "DM601"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI",
+      "make": "ALLEN-BRADLEY",
+      "model": "MICRO LOGICS 1400"
+    },
+    {
+      "name": "PLC",
+      "make": "ALLEN-BRADLEY",
+      "model": "MICRO LOGICS 1400"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "Acid Dosing",
+      "make": "MILTON ROY",
+      "model": "A11"
+    },
+    {
+      "dosing_pump_for": "Antiscalant Dosing",
+      "make": "MILTON ROY",
+      "model": "A11"
+    },
+    {
+      "dosing_pump_for": "Antiscalant Dosing",
+      "make": "MILTON ROY",
+      "model": "A11"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "Motor",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "Tapper",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "Pump",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "Tapper",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": "V-Belt",
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "4272",
+        "1",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Bag Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Cartridge Filter",
+      "values": [
+        "NA",
+        "30\" X 9",
+        "NA",
+        "ROCHEM"
+      ]
+    },
+    {
+      "position": 4,
+      "name": "D/A Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 7,
+    "instruments": 10,
+    "hmi_and_plc": 2,
+    "vfd": null,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": 3,
+    "filters": 4
+  }
+}

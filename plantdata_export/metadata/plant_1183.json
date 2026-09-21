@@ -1,0 +1,9 @@
+{
+  "plant_id": "1183",
+  "dropdown_name": "Valiant Advanced Sciences Private Limited  - 3970 (SPRO)  - 292",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1183",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1183.html",
+  "plant_name": "Plant valiant advanced sciences private limited",
+  "serial_number": "3970"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1065",
+  "dropdown_name": "Asian Paint Limited - 1964 (PTRO)  - 180",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1065",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1065.html",
+  "plant_name": "Plant asian paint limited",
+  "serial_number": "1964"
+}

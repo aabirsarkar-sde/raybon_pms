@@ -1,0 +1,9 @@
+{
+  "plant_id": "1037",
+  "dropdown_name": "Aarti Industries Ltd. - Saffron Div - 3119 (PTRO)  - 51W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1037",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1037.html",
+  "plant_name": "Plant aarti industries ltd. - saffron div",
+  "serial_number": "3119"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1123",
+  "dropdown_name": "Cadila Pharmaceuticals Ltd. - 1888 (SPRO)  - 210",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1123",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1123.html",
+  "plant_name": "Plant cadila pharmaceuticals ltd.",
+  "serial_number": "1888"
+}

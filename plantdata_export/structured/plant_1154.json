@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1154,
+  "source": {
+    "raw_file": "raw/plant_1154.html",
+    "metadata_file": "metadata/plant_1154.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1154",
+    "http_status": 200,
+    "dropdown_label": "Tagros Chemicals India Limited - 1752 (PTRO)  - 350"
+  },
+  "plant": {
+    "name": "tagros chemicals india limited",
+    "serial_number": "1752",
+    "capacity": "350",
+    "site_contact_number": "9081817993"
+  },
+  "zone": "Panoli",
+  "modules": {
+    "stage_1": "20(PT)",
+    "stage_2": "23(PT)",
+    "stage_3": "23(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "66"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "17.5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "17.5"
+    },
+    {
+      "position": 3,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "10500"
+    },
+    {
+      "position": 4,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "7500"
+    },
+    {
+      "position": 5,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "7500"
+    },
+    {
+      "position": 6,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1500"
+    },
+    {
+      "position": 7,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "13.12"
+    },
+    {
+      "position": 9,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "800"
+    },
+    {
+      "position": 10,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "400"
+    },
+    {
+      "position": 11,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "200"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "75"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3.0",
+      "motor_amp": "6"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "8"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "NA",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "NA",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK1603",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "NA",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "LHP",
+      "motor_kw": "11",
+      "motor_amp": "22"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "LHP",
+      "motor_kw": "11",
+      "motor_amp": "22"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-065"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TWDLCDA40DRF"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "XBTN 401"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "SCHNEIDER",
+      "model": "ATV312"
+    },
+    {
+      "name": "VFD",
+      "make": "SCHNEIDER",
+      "model": "ATV312"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "PSMA10100PP"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "SPA 118*5 A"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2012"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "SPA 200*5 A"
+        },
+        {
+          "label": "TAPPER",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "NA",
+          "value": "2.0 LTR"
+        },
+        {
+          "label": "V-Belt",
+          "value": "XPA 1500"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3672",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 8,
+    "instruments": 5,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1092",
+  "dropdown_name": "Aarti Phase 3 (Acid Division) - 2385 (HPRO)  - 136",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1092",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1092.html",
+  "plant_name": "Plant aarti phase 3 (acid division)",
+  "serial_number": "2385"
+}

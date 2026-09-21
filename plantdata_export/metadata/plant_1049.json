@@ -1,0 +1,9 @@
+{
+  "plant_id": "1049",
+  "dropdown_name": "ALEMBIC PHARMACEUTICALS UNIT 1, PANELAV  - 2419 (SPRO)  - 150W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1049",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1049.html",
+  "plant_name": "Plant alembic pharmaceuticals unit 1, panelav",
+  "serial_number": "2419"
+}

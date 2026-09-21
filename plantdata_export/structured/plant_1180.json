@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1180,
+  "source": {
+    "raw_file": "raw/plant_1180.html",
+    "metadata_file": "metadata/plant_1180.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1180",
+    "http_status": 200,
+    "dropdown_label": "Nocil Limited - 3946 (SPRO)  - 279W"
+  },
+  "plant": {
+    "name": "nocil limited",
+    "serial_number": "3946",
+    "capacity": "279w",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Dahej",
+  "modules": {
+    "stage_1": "5",
+    "stage_2": "5",
+    "stage_3": "5",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PP1601",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-17",
+      "motor_make": "Grundfos",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PK 162",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-3",
+      "motor_make": "Grundfos",
+      "motor_kw": "3",
+      "motor_amp": "6.3"
+    },
+    {
+      "pump_code": "PK 195",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-2",
+      "motor_make": "Grundfos",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    }
+  ],
+  "instruments": null,
+  "hmi_and_plc": null,
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": null,
+    "hmi_and_plc": null,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

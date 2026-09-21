@@ -1,0 +1,9 @@
+{
+  "plant_id": "1146",
+  "dropdown_name": "IPCA Laboratories Limited - 3644 (SPRO)  - 25",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1146",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1146.html",
+  "plant_name": "Plant ipca laboratories limited",
+  "serial_number": "3644"
+}

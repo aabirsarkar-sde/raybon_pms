@@ -1,0 +1,9 @@
+{
+  "plant_id": "1072",
+  "dropdown_name": "Aarti Industries Limited - 2708 (STPTRO)  - 328",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1072",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1072.html",
+  "plant_name": "Plant aarti industries limited",
+  "serial_number": "2708"
+}

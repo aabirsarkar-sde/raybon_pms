@@ -1,0 +1,9 @@
+{
+  "plant_id": "1181",
+  "dropdown_name": "Valiant Advanced Sciences Private Limited  - 3968 (PTRO)  - 329",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1181",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1181.html",
+  "plant_name": "Plant valiant advanced sciences private limited",
+  "serial_number": "3968"
+}

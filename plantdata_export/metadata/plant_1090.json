@@ -1,0 +1,9 @@
+{
+  "plant_id": "1090",
+  "dropdown_name": "Ganesh Polychem Ltd. - 3054 (SPRO)  - 250",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1090",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1090.html",
+  "plant_name": "Plant ganesh polychem ltd.",
+  "serial_number": "3054"
+}

@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1095,
+  "source": {
+    "raw_file": "raw/plant_1095.html",
+    "metadata_file": "metadata/plant_1095.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1095",
+    "http_status": 200,
+    "dropdown_label": "TAGROS CHEMICALS LTD\t\t\t\t - 2046 (PTRO)  - 400"
+  },
+  "plant": {
+    "name": "tagros chemicals ltd",
+    "serial_number": "2046",
+    "capacity": "400",
+    "site_contact_number": "7096453206"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "25",
+    "stage_2": "27",
+    "stage_3": "28",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "20"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "10500"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "7000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "<1000"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "<150"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "<20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "16"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "600"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "400"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "<100"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "<30"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "80"
+    },
+    {
+      "position": 13,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "80"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20 - 03",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11.2"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20 - 04",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "8"
+    },
+    {
+      "pump_code": "PK1603",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "HAVELLS",
+      "motor_kw": "15",
+      "motor_amp": "27"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20 - 02",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "PADDLE WHEEL"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "PADDLE WHEEL"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": null
+    },
+    {
+      "name": "Feed ORP Meter",
+      "make": "DELACUA",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "3512"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 5,
+    "instruments": 5,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

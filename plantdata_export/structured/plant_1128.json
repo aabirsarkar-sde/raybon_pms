@@ -1,0 +1,379 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1128,
+  "source": {
+    "raw_file": "raw/plant_1128.html",
+    "metadata_file": "metadata/plant_1128.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1128",
+    "http_status": 200,
+    "dropdown_label": "Lupin Limited - 1639 (PTRO)  - 600"
+  },
+  "plant": {
+    "name": "lupin limited",
+    "serial_number": "1639",
+    "capacity": "600",
+    "site_contact_number": "9376447907"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "37(PT)",
+    "stage_2": "40(PT)",
+    "stage_3": "24(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "101"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m3/Hr.",
+      "unit_raw": "(m3/Hr.)",
+      "value": "30"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "25000-30000"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "mg/ltr",
+      "unit_raw": "(mg/ltr)",
+      "value": "18000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr",
+      "unit_raw": "(mg/ltr)",
+      "value": "1200"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "N/A"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m3/Hr.",
+      "unit_raw": "(m3/Hr.)",
+      "value": "19.5"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1800-2000"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "mg/ltr",
+      "unit_raw": "(mg/ltr)",
+      "value": "900-1000"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr",
+      "unit_raw": "(mg/ltr)",
+      "value": "100"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "65"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 45-2-2",
+      "motor_make": "Grundfos",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 45-2",
+      "motor_make": "Grundfos",
+      "motor_kw": "7.5",
+      "motor_amp": "15"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "Hydracell",
+      "pump_model": "G-35",
+      "motor_make": "LHP",
+      "motor_kw": "18.5",
+      "motor_amp": "36"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "Hydracell",
+      "pump_model": "G-35",
+      "motor_make": "LHP",
+      "motor_kw": "18.5",
+      "motor_amp": "36"
+    },
+    {
+      "pump_code": "PK1603",
+      "pump_make": "Hydracell",
+      "pump_model": "G-35",
+      "motor_make": "LHP",
+      "motor_kw": "18.5",
+      "motor_amp": "36"
+    },
+    {
+      "pump_code": "PK1604",
+      "pump_make": "Hydracell",
+      "pump_model": "G-35",
+      "motor_make": "LHP",
+      "motor_kw": "18.5",
+      "motor_amp": "36"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "Dickow",
+      "pump_model": "NCB HX 50/210",
+      "motor_make": "LHP",
+      "motor_kw": "18.5",
+      "motor_amp": "36"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "Dickow",
+      "pump_model": "NCB HX 26/210",
+      "motor_make": "LHP",
+      "motor_kw": "11",
+      "motor_amp": "22"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 20-3",
+      "motor_make": "Grundfos",
+      "motor_kw": "3",
+      "motor_amp": "6"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 32-3",
+      "motor_make": "Grundfos",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK141",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 32-2-2",
+      "motor_make": "Grundfos",
+      "motor_kw": "3",
+      "motor_amp": "6"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALFA 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALFA 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "9900"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes & Marshall",
+      "model": "2.5 KV"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM20040T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "STO715"
+    },
+    {
+      "name": "Module 1",
+      "make": "SCHNIEDER",
+      "model": "TM3RDM16R"
+    },
+    {
+      "name": "Module 2",
+      "make": "SCHNIEDER",
+      "model": "TM3RDM16R"
+    },
+    {
+      "name": "Module 3",
+      "make": "SCHNIEDER",
+      "model": "TM3AI8"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "PROMINENT",
+      "model": "PsMa10010"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR PULLEY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "180 X 4"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP PULLY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "200 X 4"
+        },
+        {
+          "label": "Tapper",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "PULSATION DAMPER",
+      "entries": [
+        {
+          "label": null,
+          "value": "0.75 LTR"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "group": "V-Belt",
+      "entries": [
+        {
+          "label": null,
+          "value": "XPA 1750 X 4"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "4272 (3W+3S)",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\" (3W + 3S)",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Bag filter",
+      "values": [
+        "2W + 2S",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 11,
+    "instruments": 6,
+    "hmi_and_plc": 5,
+    "vfd": 2,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": 4,
+    "filters": 3
+  }
+}

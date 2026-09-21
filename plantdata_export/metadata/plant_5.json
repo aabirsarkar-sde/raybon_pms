@@ -1,0 +1,9 @@
+{
+  "plant_id": "5",
+  "dropdown_name": "UNISON PHARMACEUTICALS PVT. LTD. - 2682 (PTRO2)  - 88W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=5",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_5.html",
+  "plant_name": "Plant unison pharmaceuticals pvt. ltd.",
+  "serial_number": "2682"
+}

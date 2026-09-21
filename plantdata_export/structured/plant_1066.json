@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1066,
+  "source": {
+    "raw_file": "raw/plant_1066.html",
+    "metadata_file": "metadata/plant_1066.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1066",
+    "http_status": 200,
+    "dropdown_label": "J B Chemicals & Pharmaceuticals Limited - 1636 (PTRO)  - 35"
+  },
+  "plant": {
+    "name": "j b chemicals & pharmaceuticals limited",
+    "serial_number": "1636",
+    "capacity": "35",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "3",
+    "stage_2": "3",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "1.6"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "2800"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "2000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "900-1000"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "200"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "1.35-1.43"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "150"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "75"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "50"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85-90"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "FTT",
+      "pump_model": "ST4/60",
+      "motor_make": "FTT",
+      "motor_kw": "1.1",
+      "motor_amp": "2.7"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 3-36",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3.0",
+      "motor_amp": "5.8"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "BM8A25N",
+      "motor_make": "SHAKTI",
+      "motor_kw": "4",
+      "motor_amp": "8"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CM 3-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.62",
+      "motor_amp": "1"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CHI 2-50",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.6",
+      "motor_amp": "5"
+    },
+    {
+      "pump_code": "FE183",
+      "pump_make": "Crompton & Greaves",
+      "pump_model": "NDA-23",
+      "motor_make": "Crompton & Greaves",
+      "motor_kw": "0.75",
+      "motor_amp": "2"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-043"
+    }
+  ],
+  "hmi_and_plc": null,
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ROHIB-28",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "TAPPER",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "TAPPER",
+          "value": "NA"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "1354",
+        "FRP",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "20\"",
+        "PP",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 6,
+    "instruments": 2,
+    "hmi_and_plc": null,
+    "vfd": null,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": 2,
+    "filters": 2
+  }
+}

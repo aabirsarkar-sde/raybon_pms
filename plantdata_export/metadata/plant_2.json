@@ -1,0 +1,9 @@
+{
+  "plant_id": "2",
+  "dropdown_name": "INTAS PHARMA. LTD. MATODA - 2526 (SPRO)  - 200W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=2",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_2.html",
+  "plant_name": "Plant intas pharma. ltd. matoda",
+  "serial_number": "2526"
+}

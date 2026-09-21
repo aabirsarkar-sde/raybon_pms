@@ -1,0 +1,9 @@
+{
+  "plant_id": "1045",
+  "dropdown_name": "ALEMBIC PHARMACEUTICAL,KARKHDI - 2437 (HPRO)  - 93W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1045",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1045.html",
+  "plant_name": "Plant alembic pharmaceutical,karkhdi",
+  "serial_number": "2437"
+}

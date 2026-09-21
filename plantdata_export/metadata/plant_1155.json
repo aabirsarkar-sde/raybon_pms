@@ -1,0 +1,9 @@
+{
+  "plant_id": "1155",
+  "dropdown_name": "Tagros Chemicals India Limited - 1753 (SPRO)  - 262",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1155",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1155.html",
+  "plant_name": "Plant tagros chemicals india limited",
+  "serial_number": "1753"
+}

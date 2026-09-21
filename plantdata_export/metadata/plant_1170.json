@@ -1,0 +1,9 @@
+{
+  "plant_id": "1170",
+  "dropdown_name": "Aarti Industries Limited - 1876 (SPRO)  - 90",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1170",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1170.html",
+  "plant_name": "Plant aarti industries limited",
+  "serial_number": "1876"
+}

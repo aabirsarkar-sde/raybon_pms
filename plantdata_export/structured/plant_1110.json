@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1110,
+  "source": {
+    "raw_file": "raw/plant_1110.html",
+    "metadata_file": "metadata/plant_1110.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1110",
+    "http_status": 200,
+    "dropdown_label": "UPL Limited  - Unit 2 - 3628 (SPRO)  - 27"
+  },
+  "plant": {
+    "name": "upl limited  - unit 2",
+    "serial_number": "3628",
+    "capacity": "27",
+    "site_contact_number": "9376447921"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "3",
+    "stage_2": "3",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "1.4"
+    },
+    {
+      "position": 2,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "1.2"
+    },
+    {
+      "position": 3,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "2030"
+    },
+    {
+      "position": 4,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "200"
+    },
+    {
+      "position": 5,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1450"
+    },
+    {
+      "position": 6,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "150"
+    },
+    {
+      "position": 7,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 8,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-6",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.5"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-32",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.75",
+      "motor_amp": "2"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 1-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.33",
+      "motor_amp": "1"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "0-10"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "0-100"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200T40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "GHU3512"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "PROMINENT",
+      "model": "PsMa10010"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "20\"",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "D/A Filter",
+      "values": [
+        "1354",
+        "FRP",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 7,
+    "hmi_and_plc": 2,
+    "vfd": null,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": null,
+    "filters": 2
+  }
+}

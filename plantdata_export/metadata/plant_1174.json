@@ -1,0 +1,9 @@
+{
+  "plant_id": "1174",
+  "dropdown_name": "Sun Pharmaceuticals Limited, Ank - 2120 (SPRO)  - 110",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1174",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1174.html",
+  "plant_name": "Plant sun pharmaceuticals limited, ank",
+  "serial_number": "2120"
+}

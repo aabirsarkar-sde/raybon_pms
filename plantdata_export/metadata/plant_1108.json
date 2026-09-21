@@ -1,0 +1,9 @@
+{
+  "plant_id": "1108",
+  "dropdown_name": "UPL Limited - Unit 5 - 3256 (STPTRO)  - 1250",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1108",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1108.html",
+  "plant_name": "Plant upl limited - unit 5",
+  "serial_number": "3256"
+}

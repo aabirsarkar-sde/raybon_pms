@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1117,
+  "source": {
+    "raw_file": "raw/plant_1117.html",
+    "metadata_file": "metadata/plant_1117.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1117",
+    "http_status": 200,
+    "dropdown_label": "Concord Biotech Limited- Limbasi - 3205 (HPRO)  - 90"
+  },
+  "plant": {
+    "name": "concord biotech limited- limbasi",
+    "serial_number": "3205",
+    "capacity": "90",
+    "site_contact_number": "7574000686"
+  },
+  "zone": "Ahmedabad",
+  "modules": {
+    "stage_1": "6",
+    "stage_2": "12",
+    "stage_3": "12",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.75",
+      "motor_amp": "1.5"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-6",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.2"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "SIEMENS",
+      "motor_kw": "15",
+      "motor_amp": "30"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "SP9A-21N",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "KROHNE MARSHALL",
+      "model": "IFC 100"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "KROHNE MARSHALL",
+      "model": "IFC 100"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EMERSON",
+      "model": "ROSE MOUNT 1056"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EMERSON",
+      "model": "ROSE MOUNT 1056"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "EMERSON",
+      "model": "ROSE MOUNT 1056"
+    },
+    {
+      "name": "SMCV",
+      "make": "PS AUTOMATION",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": null,
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "J-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "J-1000"
+    }
+  ],
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 6,
+    "hmi_and_plc": null,
+    "vfd": 2,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

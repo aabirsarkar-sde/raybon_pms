@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1101,
+  "source": {
+    "raw_file": "raw/plant_1101.html",
+    "metadata_file": "metadata/plant_1101.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1101",
+    "http_status": 200,
+    "dropdown_label": "Zydus Lifesciences Ltd. - Unit II - 1886 (PTRO)  - 282"
+  },
+  "plant": {
+    "name": "zydus lifesciences ltd. - unit ii",
+    "serial_number": "1886",
+    "capacity": "282",
+    "site_contact_number": "9081817992"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "18",
+    "stage_2": "26",
+    "stage_3": "24",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "14.1"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "14000"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "9100"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "2000"
+    },
+    {
+      "position": 5,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "75"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "10.58"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1300"
+    },
+    {
+      "position": 8,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "850"
+    },
+    {
+      "position": 9,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "200"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "WANNER",
+      "pump_model": "G-35",
+      "motor_make": "NA",
+      "motor_kw": "15",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK1603",
+      "pump_make": "WANNER",
+      "pump_model": "G-35",
+      "motor_make": "NA",
+      "motor_kw": "15",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "NA",
+      "motor_kw": "11",
+      "motor_amp": "22"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.55"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6.3"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536 x 2"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536 x 2"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "8750"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "8750"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "8850"
+    },
+    {
+      "name": "Feed ORP Meter",
+      "make": "Georg Fischer",
+      "model": "8850"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": null
+    },
+    {
+      "name": "PS131",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "PS151",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "PS171",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "PS180",
+      "make": "Telemechnique",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNIEDER",
+      "model": "TM221C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNIEDER",
+      "model": "GXU-3512"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "NA",
+      "model": "EJECTOR"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "SS",
+          "value": "0.75 LTR"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3672",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\" X 2NOS",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "D/A Filter",
+      "values": [
+        "3072",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 7,
+    "instruments": 11,
+    "hmi_and_plc": 2,
+    "vfd": null,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 1,
+    "filters": 3
+  }
+}

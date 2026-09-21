@@ -1,0 +1,9 @@
+{
+  "plant_id": "1022",
+  "dropdown_name": "BHARAT RASAYAN LIMITED - 3523 (PTRO)  - 200W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1022",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1022.html",
+  "plant_name": "Plant bharat rasayan limited",
+  "serial_number": "3523"
+}

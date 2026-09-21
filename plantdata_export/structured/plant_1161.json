@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1161,
+  "source": {
+    "raw_file": "raw/plant_1161.html",
+    "metadata_file": "metadata/plant_1161.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1161",
+    "http_status": 200,
+    "dropdown_label": "Solvay Specialities India Pvt. Ltd - 1796 (SPRO)  - 228"
+  },
+  "plant": {
+    "name": "solvay specialities india pvt. ltd",
+    "serial_number": "1796",
+    "capacity": "228",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Panoli",
+  "modules": {
+    "stage_1": "6(SP)",
+    "stage_2": "6(SP)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "12"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "10.36"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "300"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "150"
+    },
+    {
+      "position": 4,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "Nil"
+    },
+    {
+      "position": 5,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "8.8"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "30"
+    },
+    {
+      "position": 8,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "10"
+    },
+    {
+      "position": 9,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-17",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-02",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "ROSEMOUNT",
+      "model": "8732EST1A1NAM4"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "ROSEMOUNT",
+      "model": "8732EST1A1NAM4"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8850"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8850"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8750"
+    }
+  ],
+  "hmi_and_plc": null,
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 5,
+    "hmi_and_plc": null,
+    "vfd": 1,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": 1
+  }
+}

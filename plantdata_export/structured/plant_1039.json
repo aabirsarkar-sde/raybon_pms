@@ -1,0 +1,374 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1039,
+  "source": {
+    "raw_file": "raw/plant_1039.html",
+    "metadata_file": "metadata/plant_1039.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1039",
+    "http_status": 200,
+    "dropdown_label": "GLOBAL GOURMET PVT. LTD., JAMBUSAR - 3003 (13)  - 100W"
+  },
+  "plant": {
+    "name": "global gourmet pvt. ltd., jambusar",
+    "serial_number": "3003",
+    "capacity": "100w",
+    "site_contact_number": "7285031558"
+  },
+  "zone": "Vadodara",
+  "modules": {
+    "stage_1": "2(ST)",
+    "stage_2": "4(ST)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "6"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "3500"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "2500"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "100"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "200"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "4"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "250"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "125"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "20"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "0"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "80"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-8",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.2"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-13",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-36",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-12SB",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "FE183",
+      "pump_make": "NA",
+      "pump_model": "NA",
+      "motor_make": "Crompton & Greaves",
+      "motor_kw": "1.1",
+      "motor_amp": "2.2"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.55",
+      "motor_amp": "1.4"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA COND-560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA COND-560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-065"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": "PSL 203"
+    },
+    {
+      "name": "PS131",
+      "make": "ORION",
+      "model": "MZ7/10"
+    },
+    {
+      "name": "PS151",
+      "make": "ORION",
+      "model": "MZ7/10"
+    },
+    {
+      "name": "PS171",
+      "make": "ORION",
+      "model": "MZ7/10"
+    },
+    {
+      "name": "PS180",
+      "make": "ORION",
+      "model": "MZ7/10"
+    },
+    {
+      "name": "VE1801",
+      "make": "SOLENOID VALVE",
+      "model": "NA"
+    },
+    {
+      "name": "VE1802",
+      "make": "SOLENOID VALVE",
+      "model": "NA"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI",
+      "make": "HARMONY",
+      "model": "GXU-3512"
+    },
+    {
+      "name": "PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C40T"
+    },
+    {
+      "name": "Module 1",
+      "make": "SCHNEIDER",
+      "model": "TM3RDM316R"
+    },
+    {
+      "name": "Module 2",
+      "make": "SCHNEIDER",
+      "model": "TM3AM6"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "Yaskawa",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "Yaskawa",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "Acid Dosing",
+      "make": "Prominent",
+      "model": "PsMa10010"
+    },
+    {
+      "dosing_pump_for": "Antiscalant Dosing",
+      "make": "E-Dose",
+      "model": "IMP64"
+    },
+    {
+      "dosing_pump_for": "SMBS",
+      "make": "NA",
+      "model": "NA"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "Motor",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "Tapper",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "Pump",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "Tapper",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": "V-Belt",
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3672",
+        "1",
+        "NA",
+        "ROCHEM"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Bag Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Cartridge Filter",
+      "values": [
+        "FRP",
+        "5 X 1",
+        "NA",
+        "ROCHEM"
+      ]
+    },
+    {
+      "position": 4,
+      "name": "D/A Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 6,
+    "instruments": 12,
+    "hmi_and_plc": 4,
+    "vfd": 2,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": 3,
+    "filters": 4
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1070,
+  "source": {
+    "raw_file": "raw/plant_1070.html",
+    "metadata_file": "metadata/plant_1070.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1070",
+    "http_status": 200,
+    "dropdown_label": "Aarti Industries Limited - 3255 (HPRO)  - 180"
+  },
+  "plant": {
+    "name": "aarti industries limited",
+    "serial_number": "3255",
+    "capacity": "180",
+    "site_contact_number": "7574000978"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "4(ST)",
+    "stage_2": "10(PT)",
+    "stage_3": "10(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "24"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "9"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "22344"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "15960"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1000"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "NA"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "5.9"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "2200"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1500"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "KSB",
+      "pump_model": "65-40-200",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "5.5",
+      "motor_amp": "10.5"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "11.0",
+      "motor_amp": "22.1"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-12 SF",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11.00"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-12 SF",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.55",
+      "motor_amp": "1.90"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 561"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "GLY 63 MM"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "GLY 100 MM"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TWDLCDA-40 DRF"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "XBTN 40"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "XBTN 40"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "EJECTOR",
+      "model": "25 MM"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "PROMINENT",
+      "model": "PSMa-10100PP"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "132 X4 A"
+        },
+        {
+          "label": "TAPPER",
+          "value": "3020 A"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "300x4 A"
+        },
+        {
+          "label": "TAPPER",
+          "value": "3020 A"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "Pulsation Damper",
+          "value": "0.75 ltr"
+        },
+        {
+          "label": "V-Belt",
+          "value": "1650 SPAX"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "NA",
+        "30\"",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 5,
+    "instruments": 6,
+    "hmi_and_plc": 2,
+    "vfd": 1,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 1
+  }
+}

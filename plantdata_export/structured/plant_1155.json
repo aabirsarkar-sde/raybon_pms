@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1155,
+  "source": {
+    "raw_file": "raw/plant_1155.html",
+    "metadata_file": "metadata/plant_1155.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1155",
+    "http_status": 200,
+    "dropdown_label": "Tagros Chemicals India Limited - 1753 (SPRO)  - 262"
+  },
+  "plant": {
+    "name": "tagros chemicals india limited",
+    "serial_number": "1753",
+    "capacity": "262",
+    "site_contact_number": "9081817993"
+  },
+  "zone": "Panoli",
+  "modules": {
+    "stage_1": "6(SP)",
+    "stage_2": "4(SP)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "10"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "13.1"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "800"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "500"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "200"
+    },
+    {
+      "position": 5,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "0"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "11.8"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "200"
+    },
+    {
+      "position": 8,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 9,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "50"
+    },
+    {
+      "position": 10,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "90"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-17",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "7.5",
+      "motor_amp": "15"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "KRANTI",
+      "model": null
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-045"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "XTILO",
+      "model": null
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "NA",
+      "model": null
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "SCHNEIDER",
+      "model": "ATV312"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": 3,
+    "hmi_and_plc": 2,
+    "vfd": 1,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": null,
+    "filters": 1
+  }
+}

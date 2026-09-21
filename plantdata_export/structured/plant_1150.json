@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1150,
+  "source": {
+    "raw_file": "raw/plant_1150.html",
+    "metadata_file": "metadata/plant_1150.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1150",
+    "http_status": 200,
+    "dropdown_label": "Detox India Pvt. Ltd. - 3044 (PTRO)  - 1100"
+  },
+  "plant": {
+    "name": "detox india pvt. ltd.",
+    "serial_number": "3044",
+    "capacity": "1100",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "0",
+    "stage_2": "0",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "55"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "5600"
+    },
+    {
+      "position": 3,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "33"
+    },
+    {
+      "position": 4,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1200"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "11",
+      "motor_amp": "19.8"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "11",
+      "motor_amp": "19.8"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "FTT",
+      "pump_model": "FTTV50/190/8",
+      "motor_make": "SIEMENS",
+      "motor_kw": "110",
+      "motor_amp": "200"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 32-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "7.5",
+      "motor_amp": "14"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 32-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "7.5",
+      "motor_amp": "14"
+    },
+    {
+      "pump_code": "PK164",
+      "pump_make": "DICKOW",
+      "pump_model": "NCB hx 50/210",
+      "motor_make": "LHP",
+      "motor_kw": "15",
+      "motor_amp": "27.9"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-1-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Endress + Hauser",
+      "model": "CMM442-2DV6/0"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Endress + Hauser",
+      "model": "CMM442-2DV6/0"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Uniflow",
+      "model": "200#600"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "Orion",
+      "model": "MZ-10 / MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "0-60"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "0-10"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Endress + Hauser",
+      "model": "10L80-QC 80NB"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Endress + Hauser",
+      "model": "CM442-37D6/0"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TMC2AQ2C"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "GA500"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "A-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "NA"
+    },
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "1601"
+    },
+    {
+      "dosing_pump_for": "Biocide",
+      "make": "UKL",
+      "model": "EDS-100"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "30\"",
+        "FRP",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 8,
+    "instruments": 8,
+    "hmi_and_plc": 2,
+    "vfd": 5,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": null,
+    "filters": 1
+  }
+}

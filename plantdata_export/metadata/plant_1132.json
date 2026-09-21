@@ -1,0 +1,9 @@
+{
+  "plant_id": "1132",
+  "dropdown_name": "Glenmark Life sciences Limited - 2300 (STPTRO)  - 150",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1132",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1132.html",
+  "plant_name": "Plant glenmark life sciences limited",
+  "serial_number": "2300"
+}

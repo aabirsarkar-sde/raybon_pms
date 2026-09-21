@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1145,
+  "source": {
+    "raw_file": "raw/plant_1145.html",
+    "metadata_file": "metadata/plant_1145.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1145",
+    "http_status": 200,
+    "dropdown_label": "IPCA Laboratories Limited - 3664 (STPTRO)  - 25"
+  },
+  "plant": {
+    "name": "ipca laboratories limited",
+    "serial_number": "3664",
+    "capacity": "25",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "2(ST)",
+    "stage_2": "0",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "2"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "1.25"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "350"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "250"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "NA",
+      "unit_raw": "(NA)",
+      "value": "NA"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "130"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "2"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "1.06"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "30"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "15"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "NA",
+      "unit_raw": "(NA)",
+      "value": "NA"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "NA",
+      "unit_raw": "(NA)",
+      "value": "NA"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 1-7",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.4",
+      "motor_amp": "1"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "FTT",
+      "pump_model": "ST 2-220",
+      "motor_make": "ADITYA",
+      "motor_kw": "2.2",
+      "motor_amp": "4.1"
+    },
+    {
+      "pump_code": "PK161",
+      "pump_make": "FTT",
+      "pump_model": "ST 4-40",
+      "motor_make": "ADITYA",
+      "motor_kw": "0.8",
+      "motor_amp": "1.5"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 1-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.37",
+      "motor_amp": "1"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "THERMO 560"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "MASS",
+      "model": "0-10"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "0-100"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "GRAPHIC OPERATION CONTROLLER",
+      "model": "GC35MH-16MR-D"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "GRAPHIC OPERATION CONTROLLER",
+      "model": "GC35MH-16MR-D"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ROHIB-28",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "TAPPER",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "NA"
+        },
+        {
+          "label": "TAPPER",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Bag Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Cartridge Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 4,
+      "name": "D/A Filter",
+      "values": [
+        "1354",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 6,
+    "hmi_and_plc": 2,
+    "vfd": null,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": 3,
+    "filters": 4
+  }
+}

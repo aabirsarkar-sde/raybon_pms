@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1138,
+  "source": {
+    "raw_file": "raw/plant_1138.html",
+    "metadata_file": "metadata/plant_1138.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1138",
+    "http_status": 200,
+    "dropdown_label": "DETOX INDIA PVT. LTD. - 2399 (HPRO)  - 45W"
+  },
+  "plant": {
+    "name": "detox india pvt. ltd.",
+    "serial_number": "2399",
+    "capacity": "45w",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "9",
+    "stage_2": "0",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "2.3"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM\t)",
+      "value": "17920"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm )",
+      "value": "12800"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "6100"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "-"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "-"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "1.57"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM\t)",
+      "value": "1400"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "700"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "610"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "-"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "70"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 3-8",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.75",
+      "motor_amp": "1.9"
+    },
+    {
+      "pump_code": "PP1601",
+      "pump_make": "CAT",
+      "pump_model": "2537",
+      "motor_make": "SIEMENS",
+      "motor_kw": "7.5",
+      "motor_amp": "15"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Thermo",
+      "model": "Alpha Cond 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Thermo",
+      "model": "Alpha Cond 560"
+    },
+    {
+      "name": "SMCV",
+      "make": "WITH PS ACTUAT",
+      "model": "0.25 KV"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "Orion",
+      "model": "MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "MASS",
+      "model": "0-100 bar"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "MASS",
+      "model": "0-10 bar"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "GRUNDFOS",
+      "model": "2536"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "GRUNDFOS",
+      "model": "2536"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-043"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": "A-10"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "Schneider Electric",
+      "model": "XBT-N401"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "Schneider Electric",
+      "model": "TWDLCDA40DRF"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "Acid Dosing",
+      "make": "MILTON ROY",
+      "model": "D-12 PP"
+    },
+    {
+      "dosing_pump_for": "Antiscalant",
+      "make": "GRUNDFOS",
+      "model": "DMB-5"
+    },
+    {
+      "dosing_pump_for": null,
+      "make": "N/A",
+      "model": null
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "SPA 125 x 3"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2012"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "SPA 210 x 3"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "0.35 LTR"
+        },
+        {
+          "label": "V-Belt",
+          "value": "SPAX/XPA 1450"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "20\"",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 2,
+    "instruments": 10,
+    "hmi_and_plc": 2,
+    "vfd": null,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": 3,
+    "filters": 1
+  }
+}

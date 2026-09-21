@@ -1,0 +1,9 @@
+{
+  "plant_id": "1152",
+  "dropdown_name": "Detox India Pvt. Ltd. - 2618 (HPRO)  - 500",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1152",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1152.html",
+  "plant_name": "Plant detox india pvt. ltd.",
+  "serial_number": "2618"
+}

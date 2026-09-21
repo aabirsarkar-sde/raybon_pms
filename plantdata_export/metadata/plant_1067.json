@@ -1,0 +1,9 @@
+{
+  "plant_id": "1067",
+  "dropdown_name": "UPL Limited - Unit 1 - 3337 (STPTRO)  - 200",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1067",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1067.html",
+  "plant_name": "Plant upl limited - unit 1",
+  "serial_number": "3337"
+}

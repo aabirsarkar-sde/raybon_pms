@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1087,
+  "source": {
+    "raw_file": "raw/plant_1087.html",
+    "metadata_file": "metadata/plant_1087.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1087",
+    "http_status": 200,
+    "dropdown_label": "Ganesh Polychem Ltd. - 3051 (SPRO)  - 150"
+  },
+  "plant": {
+    "name": "ganesh polychem ltd.",
+    "serial_number": "3051",
+    "capacity": "150",
+    "site_contact_number": "9574818592"
+  },
+  "zone": "Vapi",
+  "modules": {
+    "stage_1": "4",
+    "stage_2": "3",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "7.5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "μS/CM",
+      "unit_raw": "(μS/CM)",
+      "value": "525"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "375"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "NA"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "NA"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "6.7"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "μS/CM",
+      "unit_raw": "(μS/CM)",
+      "value": "100"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "50"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "NA"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "NA"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "90"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11.5"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-22",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "7.5",
+      "motor_amp": "15"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.55"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536x0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536x0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHCON560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "MMP",
+      "model": "PCC-043"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200CE40T"
+    },
+    {
+      "name": "Module 1",
+      "make": "SCHNEIDER",
+      "model": "TM3DQ16R"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": 4,
+    "hmi_and_plc": 3,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

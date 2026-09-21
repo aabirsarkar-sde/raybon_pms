@@ -1,0 +1,9 @@
+{
+  "plant_id": "1032",
+  "dropdown_name": "Alkyl Amines Chemicals Limited - 3431 (HPRO)  - 40W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1032",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1032.html",
+  "plant_name": "Plant alkyl amines chemicals limited",
+  "serial_number": "3431"
+}

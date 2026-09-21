@@ -1,0 +1,9 @@
+{
+  "plant_id": "1101",
+  "dropdown_name": "Zydus Lifesciences Ltd. - Unit II - 1886 (PTRO)  - 282",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1101",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1101.html",
+  "plant_name": "Plant zydus lifesciences ltd. - unit ii",
+  "serial_number": "1886"
+}

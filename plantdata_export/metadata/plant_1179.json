@@ -1,0 +1,9 @@
+{
+  "plant_id": "1179",
+  "dropdown_name": "Nocil Limited - 3945 - 3945 (PTRO)  - 328",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1179",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1179.html",
+  "plant_name": "Plant nocil limited - 3945",
+  "serial_number": "3945"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1040",
+  "dropdown_name": "PGP GLASS, JAMBUSAR - 1889 (PTRO)  - 600W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1040",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1040.html",
+  "plant_name": "Plant pgp glass, jambusar",
+  "serial_number": "1889"
+}

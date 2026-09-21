@@ -1,0 +1,9 @@
+{
+  "plant_id": "1080",
+  "dropdown_name": "Aarti Industries Ltd. (Alchemie) - 2386 (HPRO)  - 41",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1080",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1080.html",
+  "plant_name": "Plant aarti industries ltd. (alchemie)",
+  "serial_number": "2386"
+}

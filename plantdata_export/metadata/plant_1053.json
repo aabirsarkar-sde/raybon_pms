@@ -1,0 +1,9 @@
+{
+  "plant_id": "1053",
+  "dropdown_name": "ALEMBIC PHARMACEUTICALS UNIT 2, PANELAV - 2613 (SPRO)  - 57W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1053",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1053.html",
+  "plant_name": "Plant alembic pharmaceuticals unit 2, panelav",
+  "serial_number": "2613"
+}

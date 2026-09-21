@@ -1,0 +1,9 @@
+{
+  "plant_id": "10",
+  "dropdown_name": "Concord Biotech Ltd. - Dholka - 2991 (UtilityRO)  - 40W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=10",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_10.html",
+  "plant_name": "Plant concord biotech ltd. - dholka",
+  "serial_number": "2991"
+}

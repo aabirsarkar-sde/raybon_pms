@@ -1,0 +1,9 @@
+{
+  "plant_id": "1160",
+  "dropdown_name": "Solvay Specialities India Pvt. Ltd - 1795 (PTRO)  - 572",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1160",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1160.html",
+  "plant_name": "Plant solvay specialities india pvt. ltd",
+  "serial_number": "1795"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1173",
+  "dropdown_name": "Glenmark  - 3842 (HPRO)  - 120W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1173",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1173.html",
+  "plant_name": "Plant glenmark",
+  "serial_number": "3842"
+}

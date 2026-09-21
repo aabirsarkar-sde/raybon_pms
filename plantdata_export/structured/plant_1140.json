@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1140,
+  "source": {
+    "raw_file": "raw/plant_1140.html",
+    "metadata_file": "metadata/plant_1140.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1140",
+    "http_status": 200,
+    "dropdown_label": "Intas Pharmaceuticals Limited - 2528 (HPRO)  - 75"
+  },
+  "plant": {
+    "name": "intas pharmaceuticals limited",
+    "serial_number": "2528",
+    "capacity": "75",
+    "site_contact_number": "9376447947"
+  },
+  "zone": "Ahmedabad",
+  "modules": {
+    "stage_1": "5(PT)",
+    "stage_2": "12(PT)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "17"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-7",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.4"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "WANNER",
+      "pump_model": "G-25",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "9.3",
+      "motor_amp": "18"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "11",
+      "motor_amp": "21.5"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-065"
+    },
+    {
+      "name": "Feed ORP Meter",
+      "make": "DELACUA",
+      "model": "ORPC-1665"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "GXU3512"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C40T"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": 6,
+    "hmi_and_plc": 2,
+    "vfd": 1,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

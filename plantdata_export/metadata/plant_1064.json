@@ -1,0 +1,9 @@
+{
+  "plant_id": "1064",
+  "dropdown_name": "AMI LIFE SCIENCE, KARKHADI - 3247 (PTRO)  - 150W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1064",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1064.html",
+  "plant_name": "Plant ami life science, karkhadi",
+  "serial_number": "3247"
+}

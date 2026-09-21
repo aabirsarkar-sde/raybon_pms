@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1063,
+  "source": {
+    "raw_file": "raw/plant_1063.html",
+    "metadata_file": "metadata/plant_1063.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1063",
+    "http_status": 200,
+    "dropdown_label": "Bharuch Enviro Infrastructure Ltd.  - 3549 (HPRO)  - 50"
+  },
+  "plant": {
+    "name": "bharuch enviro infrastructure ltd.",
+    "serial_number": "3549",
+    "capacity": "50",
+    "site_contact_number": "9081817954"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "3",
+    "stage_2": "5",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-8",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.5"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "2531",
+      "motor_make": "CAT",
+      "motor_kw": "7.5",
+      "motor_amp": "15.5"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "SP5A-17R",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "6"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.75",
+      "motor_amp": "2"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "CAT",
+      "pump_model": "2531",
+      "motor_make": "CAT",
+      "motor_kw": "7.5",
+      "motor_amp": "15.5"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "THERMO 560"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM221C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "PsMa10010"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "PROMINENT",
+      "model": "PsMa10010"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "106 x 3"
+        },
+        {
+          "label": "TAPPER",
+          "value": "1610"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "236 x 3"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2517"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "FRP",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 5,
+    "instruments": 1,
+    "hmi_and_plc": 2,
+    "vfd": null,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 2,
+    "filters": 1
+  }
+}

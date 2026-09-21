@@ -1,0 +1,9 @@
+{
+  "plant_id": "1023",
+  "dropdown_name": "BHARAT RASAYAN LIMITED - 3524 (HPRO)  - 70W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1023",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1023.html",
+  "plant_name": "Plant bharat rasayan limited",
+  "serial_number": "3524"
+}

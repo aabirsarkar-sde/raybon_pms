@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1158,
+  "source": {
+    "raw_file": "raw/plant_1158.html",
+    "metadata_file": "metadata/plant_1158.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1158",
+    "http_status": 200,
+    "dropdown_label": "Solvay S - 1704 (PTRO)  - 300"
+  },
+  "plant": {
+    "name": "solvay s",
+    "serial_number": "1704",
+    "capacity": "300",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Panoli",
+  "modules": {
+    "stage_1": "16(PT)",
+    "stage_2": "10(PT)",
+    "stage_3": "10(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "36"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [],
+  "instruments": null,
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "XBTN 401"
+    }
+  ],
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 0,
+    "instruments": null,
+    "hmi_and_plc": 1,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

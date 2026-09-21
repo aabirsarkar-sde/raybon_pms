@@ -1,0 +1,9 @@
+{
+  "plant_id": "1140",
+  "dropdown_name": "Intas Pharmaceuticals Limited - 2528 (HPRO)  - 75",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1140",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1140.html",
+  "plant_name": "Plant intas pharmaceuticals limited",
+  "serial_number": "2528"
+}

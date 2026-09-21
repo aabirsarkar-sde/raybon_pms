@@ -1,0 +1,9 @@
+{
+  "plant_id": "1135",
+  "dropdown_name": "Sun Pharmaceuticals Limited - 1890 (PTRO)  - 130",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1135",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1135.html",
+  "plant_name": "Plant sun pharmaceuticals limited",
+  "serial_number": "1890"
+}

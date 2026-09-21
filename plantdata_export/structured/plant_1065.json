@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1065,
+  "source": {
+    "raw_file": "raw/plant_1065.html",
+    "metadata_file": "metadata/plant_1065.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1065",
+    "http_status": 200,
+    "dropdown_label": "Asian Paint Limited - 1964 (PTRO)  - 180"
+  },
+  "plant": {
+    "name": "asian paint limited",
+    "serial_number": "1964",
+    "capacity": "180",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "10(PT)",
+    "stage_2": "21(PT)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "31"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "8.2"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "3500"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "2500"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "-",
+      "unit_raw": "(-)",
+      "value": "-"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "90"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CM 10-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "3547",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "15.0",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "11",
+      "motor_amp": "21"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CM 10-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "0.65",
+      "motor_amp": "3.00"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-065"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "GLY 63 MM"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "GLY 100 MM"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": null
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": null
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2571"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2571"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TWDLCAE40DRF"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "XBT-N401"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "SCHNEIDER",
+      "model": "ATV312"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PP",
+      "model": "25 mm"
+    },
+    {
+      "dosing_pump_for": "Antiscalant",
+      "make": "E-DOSE",
+      "model": "15-4A"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "Motor",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "160 x 4"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "Pump",
+      "entries": [
+        {
+          "label": "PULLY",
+          "value": "250 x 4"
+        },
+        {
+          "label": "TAPPER",
+          "value": "1650 SPAX"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "Pulsation Damper",
+          "value": "0.75 ltr"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Sand Filter",
+      "values": [
+        "NA",
+        "3672",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 9,
+    "hmi_and_plc": 2,
+    "vfd": 1,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 2
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1137,
+  "source": {
+    "raw_file": "raw/plant_1137.html",
+    "metadata_file": "metadata/plant_1137.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1137",
+    "http_status": 200,
+    "dropdown_label": "Sun Pharmaceuticals Ltd - 2118 (PTRO)  - 40"
+  },
+  "plant": {
+    "name": "sun pharmaceuticals ltd",
+    "serial_number": "2118",
+    "capacity": "40",
+    "site_contact_number": "9376447940"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "4(PT)",
+    "stage_2": "6(PT)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "10"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "FTT",
+      "pump_model": "Apr-80",
+      "motor_make": "FTT",
+      "motor_kw": "0.7",
+      "motor_amp": "1.8"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "HYDRACELL",
+      "pump_model": "G-25",
+      "motor_make": "WANNER",
+      "motor_kw": "7.5",
+      "motor_amp": "15"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "SHAKTI",
+      "pump_model": "BM5-10",
+      "motor_make": "SHAKTI",
+      "motor_kw": "1.5",
+      "motor_amp": "3"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-043"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": "2.5 KV"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TWDLCDA400"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "XBTN401ML"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR PULLEY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "125 X 3"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP PULLY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "250 X 3"
+        },
+        {
+          "label": "Tapper",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "0.35 LTR"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "group": "V-Belt",
+      "entries": [
+        {
+          "label": null,
+          "value": "XPA 1650"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "FRP",
+        "1354",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "PP",
+        "20\"",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": 5,
+    "hmi_and_plc": 2,
+    "vfd": 1,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": 4,
+    "filters": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1114",
+  "dropdown_name": "UPL Limited - Unit 5 - 2479 (HybridA)  - 600",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1114",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1114.html",
+  "plant_name": "Plant upl limited - unit 5",
+  "serial_number": "2479"
+}

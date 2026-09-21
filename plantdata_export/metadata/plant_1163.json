@@ -1,0 +1,9 @@
+{
+  "plant_id": "1163",
+  "dropdown_name": "Aarti Industries Limited - 1957 (PTRO)  - 100",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1163",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1163.html",
+  "plant_name": "Plant aarti industries limited",
+  "serial_number": "1957"
+}

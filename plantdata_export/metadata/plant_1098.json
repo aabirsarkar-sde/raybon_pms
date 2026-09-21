@@ -1,0 +1,9 @@
+{
+  "plant_id": "1098",
+  "dropdown_name": "ALEMBIC DERMA DIVISION, KARKHADI - 2636 (STPTRO)  - 150W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1098",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1098.html",
+  "plant_name": "Plant alembic derma division, karkhadi",
+  "serial_number": "2636"
+}

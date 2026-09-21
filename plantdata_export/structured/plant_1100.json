@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1100,
+  "source": {
+    "raw_file": "raw/plant_1100.html",
+    "metadata_file": "metadata/plant_1100.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1100",
+    "http_status": 200,
+    "dropdown_label": "Zydus Lifesciences Ltd. - Unit I - 2247 (HPRO)  - 100"
+  },
+  "plant": {
+    "name": "zydus lifesciences ltd. - unit i",
+    "serial_number": "2247",
+    "capacity": "100",
+    "site_contact_number": "9081817991"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "6",
+    "stage_2": "13",
+    "stage_3": "13",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "34000"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "22000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "6725"
+    },
+    {
+      "position": 5,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "2.75"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "4200"
+    },
+    {
+      "position": 7,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "2700"
+    },
+    {
+      "position": 8,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "700"
+    },
+    {
+      "position": 9,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "55"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-8",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.6"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-8",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.6"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "WANNER",
+      "pump_model": "G-35",
+      "motor_make": "NA",
+      "motor_kw": "15",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "NA",
+      "motor_kw": "11",
+      "motor_amp": "22"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CM 3-3",
+      "motor_make": "NA",
+      "motor_kw": "0.45",
+      "motor_amp": "1"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": null
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": null
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Georg Fischer",
+      "model": null
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Georg Fischer",
+      "model": null
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": null
+    },
+    {
+      "name": "PS131",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "PS151",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "PS171",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "PS180",
+      "make": "Telemechnique",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": null,
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR PULLEY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "160 x 4"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP PULLY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "236 X 4"
+        },
+        {
+          "label": "Tapper",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "V-Belt",
+      "entries": [
+        {
+          "label": null,
+          "value": "XPA 1550"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "O.35 LTR"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3672",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 5,
+    "instruments": 9,
+    "hmi_and_plc": null,
+    "vfd": 1,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": 4,
+    "filters": 1
+  }
+}

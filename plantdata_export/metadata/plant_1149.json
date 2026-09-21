@@ -1,0 +1,9 @@
+{
+  "plant_id": "1149",
+  "dropdown_name": "PI industries, Jambusar (Sarod) - 3661 (PTRO)  - 134W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1149",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1149.html",
+  "plant_name": "Plant pi industries, jambusar (sarod)",
+  "serial_number": "3661"
+}

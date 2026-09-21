@@ -1,0 +1,9 @@
+{
+  "plant_id": "3",
+  "dropdown_name": "INTAS PHARMACEUTICALS LTD. - 2527 (STPTRO)  - 300W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=3",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_3.html",
+  "plant_name": "Plant intas pharmaceuticals ltd.",
+  "serial_number": "2527"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1106",
+  "dropdown_name": "Tagros Chemicals Ltd.  - 2046 (PTRO)  - 400",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1106",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1106.html",
+  "plant_name": "Plant tagros chemicals ltd.",
+  "serial_number": "2046"
+}

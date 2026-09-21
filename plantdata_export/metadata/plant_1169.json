@@ -1,0 +1,9 @@
+{
+  "plant_id": "1169",
+  "dropdown_name": "Livmore life sciences Pvt ltd, - 3622 (HPRO)  - 20W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1169",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1169.html",
+  "plant_name": "Plant livmore life sciences pvt ltd,",
+  "serial_number": "3622"
+}

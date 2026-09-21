@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1176,
+  "source": {
+    "raw_file": "raw/plant_1176.html",
+    "metadata_file": "metadata/plant_1176.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1176",
+    "http_status": 200,
+    "dropdown_label": "Wockhardt Limited - 1747 (PTRO)  - 300W"
+  },
+  "plant": {
+    "name": "wockhardt limited",
+    "serial_number": "1747",
+    "capacity": "300w",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "8(PT)",
+    "stage_2": "15(PT)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "23"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [],
+  "instruments": null,
+  "hmi_and_plc": null,
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 0,
+    "instruments": null,
+    "hmi_and_plc": null,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

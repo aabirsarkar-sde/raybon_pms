@@ -1,0 +1,9 @@
+{
+  "plant_id": "1026",
+  "dropdown_name": "Sigachi Industries Limited - 2706 (HybridA)  - 100W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1026",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1026.html",
+  "plant_name": "Plant sigachi industries limited",
+  "serial_number": "2706"
+}

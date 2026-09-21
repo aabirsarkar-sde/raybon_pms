@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1159,
+  "source": {
+    "raw_file": "raw/plant_1159.html",
+    "metadata_file": "metadata/plant_1159.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1159",
+    "http_status": 200,
+    "dropdown_label": "Solvay Specialities India Pvt. Ltd - 1704 (PTRO)  - 300"
+  },
+  "plant": {
+    "name": "solvay specialities india pvt. ltd",
+    "serial_number": "1704",
+    "capacity": "300",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Panoli",
+  "modules": {
+    "stage_1": "16(PT)",
+    "stage_2": "10(PT)",
+    "stage_3": "10(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "36"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "13.6"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "4900"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "3500"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "750"
+    },
+    {
+      "position": 5,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "9.52"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "200"
+    },
+    {
+      "position": 8,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 9,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "5"
+    },
+    {
+      "position": 10,
+      "name": "Recovery",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "70"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6.3"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "8"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-17",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "15",
+      "motor_amp": "28.5"
+    },
+    {
+      "pump_code": "PK132",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-03",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6.3"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "BM8A25N",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "9"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "BM8A25N",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "9"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3",
+      "motor_amp": "6.3"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Georg Fischer",
+      "model": "SIGNET 8550"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": "2.5 KV"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TWDLCDA40DRF"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "Verito",
+      "model": "K4PTC01"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "MILTON ROY",
+      "model": "V 10"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "PENTAIR",
+        "3672",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 7,
+    "instruments": 6,
+    "hmi_and_plc": 1,
+    "vfd": 1,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": null,
+    "filters": 2
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1132,
+  "source": {
+    "raw_file": "raw/plant_1132.html",
+    "metadata_file": "metadata/plant_1132.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1132",
+    "http_status": 200,
+    "dropdown_label": "Glenmark Life sciences Limited - 2300 (STPTRO)  - 150"
+  },
+  "plant": {
+    "name": "glenmark life sciences limited",
+    "serial_number": "2300",
+    "capacity": "150",
+    "site_contact_number": "9376447928"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "4(ST)",
+    "stage_2": "08(PT)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "12"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "6.8"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "2520"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1800"
+    },
+    {
+      "position": 4,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 5,
+      "name": "Permeate Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "5.8"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "360"
+    },
+    {
+      "position": 7,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "180"
+    },
+    {
+      "position": 8,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-7",
+      "motor_make": "Grundfos",
+      "motor_kw": "1.1",
+      "motor_amp": "2.5"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-09",
+      "motor_make": "Grundfos",
+      "motor_kw": "1.5",
+      "motor_amp": "3.15"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-26",
+      "motor_make": "Grundfos",
+      "motor_kw": "4.0",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-26",
+      "motor_make": "Grundfos",
+      "motor_kw": "4.0",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK161",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 10-04",
+      "motor_make": "Grundfos",
+      "motor_kw": "1.5",
+      "motor_amp": "3.15"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-34",
+      "motor_make": "Grundfos",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-03",
+      "motor_make": "Grundfos",
+      "motor_kw": "0.55",
+      "motor_amp": "1.44"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 5-5",
+      "motor_make": "Grundfos",
+      "motor_kw": "0.75",
+      "motor_amp": "1.90"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALFA 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC 045"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHS 063"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes & Marshall",
+      "model": "2.5 KV"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM221C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "STO715"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "J-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "J-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "J-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "SPMA-10010PP"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "PENTAIR",
+        "3672",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 8,
+    "instruments": 6,
+    "hmi_and_plc": 2,
+    "vfd": 3,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": null,
+    "filters": 2
+  }
+}

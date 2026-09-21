@@ -1,0 +1,9 @@
+{
+  "plant_id": "1016",
+  "dropdown_name": "GLENMARK LIFE SCIENCES LTD - 3572 (HPRO)  - 50W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1016",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1016.html",
+  "plant_name": "Plant glenmark life sciences ltd",
+  "serial_number": "3572"
+}

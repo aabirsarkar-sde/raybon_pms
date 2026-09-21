@@ -1,0 +1,9 @@
+{
+  "plant_id": "1076",
+  "dropdown_name": "AMI LIFE SCIENCE, KARKHADI - 3251 (HPRO)  - 45W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1076",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1076.html",
+  "plant_name": "Plant ami life science, karkhadi",
+  "serial_number": "3251"
+}

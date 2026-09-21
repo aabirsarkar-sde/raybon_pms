@@ -1,0 +1,9 @@
+{
+  "plant_id": "1039",
+  "dropdown_name": "GLOBAL GOURMET PVT. LTD., JAMBUSAR - 3003 (13)  - 100W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1039",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1039.html",
+  "plant_name": "Plant global gourmet pvt. ltd., jambusar",
+  "serial_number": "3003"
+}

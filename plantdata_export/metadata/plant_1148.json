@@ -1,0 +1,9 @@
+{
+  "plant_id": "1148",
+  "dropdown_name": "Sajjan India Limited - 2926 (SPRO)  - 300",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1148",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1148.html",
+  "plant_name": "Plant sajjan india limited",
+  "serial_number": "2926"
+}

@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1097,
+  "source": {
+    "raw_file": "raw/plant_1097.html",
+    "metadata_file": "metadata/plant_1097.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1097",
+    "http_status": 200,
+    "dropdown_label": "Zydus Lifesciences Ltd. - Unit II - 1885 (HPRO)  - 99"
+  },
+  "plant": {
+    "name": "zydus lifesciences ltd. - unit ii",
+    "serial_number": "1885",
+    "capacity": "99",
+    "site_contact_number": "9081817992"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "6",
+    "stage_2": "13",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "4.95"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "61600"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "40040"
+    },
+    {
+      "position": 4,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "55"
+    },
+    {
+      "position": 5,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "2.7"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "5000"
+    },
+    {
+      "position": 7,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "3250"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.6"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "BM8A25",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4.4",
+      "motor_amp": "9"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.5"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536 PO"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536 PO"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "8750"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "8750"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall",
+      "model": "PSL 203"
+    },
+    {
+      "name": "PS131",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "SMCV",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "SMCV",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "SMCV",
+      "make": "Telemechnique",
+      "model": null
+    },
+    {
+      "name": "SMCV",
+      "make": "Telemechnique",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": null,
+  "vfd": null,
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "E-DOSE",
+      "model": "IMP64"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR PULLEY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "112 X 3"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP PULLY",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "250 X 3"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "SS"
+        },
+        {
+          "label": null,
+          "value": "0.35LTR"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "group": "V-Belt",
+      "entries": [
+        {
+          "label": null,
+          "value": "XPA 1400"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": 10,
+    "hmi_and_plc": null,
+    "vfd": null,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 4,
+    "filters": null
+  }
+}

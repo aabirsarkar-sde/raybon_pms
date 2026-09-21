@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1174,
+  "source": {
+    "raw_file": "raw/plant_1174.html",
+    "metadata_file": "metadata/plant_1174.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1174",
+    "http_status": 200,
+    "dropdown_label": "Sun Pharmaceuticals Limited, Ank - 2120 (SPRO)  - 110"
+  },
+  "plant": {
+    "name": "sun pharmaceuticals limited, ank",
+    "serial_number": "2120",
+    "capacity": "110",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "1 (SP)",
+    "stage_2": "1 (SP)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "2"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [],
+  "instruments": null,
+  "hmi_and_plc": null,
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 0,
+    "instruments": null,
+    "hmi_and_plc": null,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

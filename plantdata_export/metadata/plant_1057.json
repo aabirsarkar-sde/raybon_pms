@@ -1,0 +1,9 @@
+{
+  "plant_id": "1057",
+  "dropdown_name": "SUNPHARMA, KARKHADI - 2070 (PTRO)  - 87.5W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1057",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1057.html",
+  "plant_name": "Plant sunpharma, karkhadi",
+  "serial_number": "2070"
+}

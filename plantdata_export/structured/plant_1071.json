@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1071,
+  "source": {
+    "raw_file": "raw/plant_1071.html",
+    "metadata_file": "metadata/plant_1071.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1071",
+    "http_status": 200,
+    "dropdown_label": "Aarti Industries Limited - 3254 (STPTRO)  - 1200"
+  },
+  "plant": {
+    "name": "aarti industries limited",
+    "serial_number": "3254",
+    "capacity": "1200",
+    "site_contact_number": "7574000978"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "28(ST)",
+    "stage_2": "24(ST)",
+    "stage_3": "20(ST)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "72"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "60"
+    },
+    {
+      "position": 2,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "60"
+    },
+    {
+      "position": 3,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "3500"
+    },
+    {
+      "position": 4,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "60"
+    },
+    {
+      "position": 5,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "3500"
+    },
+    {
+      "position": 6,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "2500"
+    },
+    {
+      "position": 7,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "2500"
+    },
+    {
+      "position": 8,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1000"
+    },
+    {
+      "position": 9,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 10,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "51"
+    },
+    {
+      "position": 12,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "300"
+    },
+    {
+      "position": 13,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "150"
+    },
+    {
+      "position": 14,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 15,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NA"
+    },
+    {
+      "position": 16,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "KSB",
+      "pump_model": "R-51560",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "30",
+      "motor_amp": "52"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "OSNA",
+      "pump_model": "2135",
+      "motor_make": "LHP",
+      "motor_kw": "75.0",
+      "motor_amp": "129"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "64-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "11",
+      "motor_amp": "19.8"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "45-5",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "18.5",
+      "motor_amp": "32.5"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-065"
+    },
+    {
+      "name": "Feed ORP Meter",
+      "make": "DELACUA",
+      "model": "PHC-045"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "GLY 63 MM"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "GLY 100 MM"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIST0-716"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "A-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "GF",
+      "model": "A977209961000875P11808"
+    },
+    {
+      "dosing_pump_for": "Antiscalant",
+      "make": "GF",
+      "model": "A977209961000875P11914"
+    },
+    {
+      "dosing_pump_for": "SMBS",
+      "make": "GF",
+      "model": "A977209961000875P11808"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "40\"",
+        "40\"",
+        "20 NOS.",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 6,
+    "hmi_and_plc": 2,
+    "vfd": 3,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": null,
+    "filters": 1
+  }
+}

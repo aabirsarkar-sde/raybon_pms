@@ -1,0 +1,9 @@
+{
+  "plant_id": "1030",
+  "dropdown_name": "Bharuch Enviro Infrastructure Limited - 3550 (HPRO)  - 50W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1030",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1030.html",
+  "plant_name": "Plant bharuch enviro infrastructure limited",
+  "serial_number": "3550"
+}

@@ -1,0 +1,295 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1151,
+  "source": {
+    "raw_file": "raw/plant_1151.html",
+    "metadata_file": "metadata/plant_1151.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1151",
+    "http_status": 200,
+    "dropdown_label": "Detox India Pvt. Ltd. - 3045 (HPRO)  - 250"
+  },
+  "plant": {
+    "name": "detox india pvt. ltd.",
+    "serial_number": "3045",
+    "capacity": "250",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "6",
+    "stage_2": "21",
+    "stage_3": "22",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "12.5"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "20160"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "14440"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "3840"
+    },
+    {
+      "position": 5,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "8.75"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1730"
+    },
+    {
+      "position": 8,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "865"
+    },
+    {
+      "position": 9,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "230"
+    },
+    {
+      "position": 10,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "70"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-3",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "3.0",
+      "motor_amp": "6.3"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "SIEMENS",
+      "motor_kw": "15",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "CAT",
+      "pump_model": "3537",
+      "motor_make": "SIEMENS",
+      "motor_kw": "15",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "LHP",
+      "motor_kw": "11",
+      "motor_amp": "21"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "LHP",
+      "motor_kw": "11",
+      "motor_amp": "21"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 15-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Endress + Hauser",
+      "model": "CMM442-2DV6/0"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Endress + Hauser",
+      "model": "CMM442-2DV6/0"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Endress + Hauser",
+      "model": "10L40-QC 40NB"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Endress + Hauser",
+      "model": "10L40-QC 40NB"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "Endress + Hauser",
+      "model": "CM442-37D6/0"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": "A-10"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-10 / MZ-7"
+    },
+    {
+      "name": "Level Switch",
+      "make": "Auromake",
+      "model": "3/8\"BSP"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "0-100"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "0-10"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TMC2AQ2C"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PROMINENT",
+      "model": "NA"
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "PROMINENT",
+      "model": "1601"
+    },
+    {
+      "dosing_pump_for": "Biocide",
+      "make": "UKL",
+      "model": "EDS-100"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "140 X 4"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "224 X 4"
+        },
+        {
+          "label": "TAPPER",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "Pulsation Damper",
+          "value": "0.75 ltr"
+        },
+        {
+          "label": "V-Belt",
+          "value": "XPA 1400"
+        }
+      ]
+    }
+  ],
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 6,
+    "instruments": 10,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": 3,
+    "filters": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1035",
+  "dropdown_name": "Aarti Industries Limited - Saffron Div. - 3117 (STPTRO)  - 508W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1035",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1035.html",
+  "plant_name": "Plant aarti industries limited - saffron div.",
+  "serial_number": "3117"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1153",
+  "dropdown_name": "Bharuch Enviro Infrastructure Ltd.  - 3548 (PTRO)  - 160",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1153",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1153.html",
+  "plant_name": "Plant bharuch enviro infrastructure ltd.",
+  "serial_number": "3548"
+}

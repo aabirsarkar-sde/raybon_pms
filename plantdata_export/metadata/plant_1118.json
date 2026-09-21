@@ -1,0 +1,9 @@
+{
+  "plant_id": "1118",
+  "dropdown_name": "Concord Biotech Limited - Limbasi - 3206 (PTRO)  - 250",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1118",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1118.html",
+  "plant_name": "Plant concord biotech limited - limbasi",
+  "serial_number": "3206"
+}

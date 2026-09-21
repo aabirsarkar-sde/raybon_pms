@@ -1,0 +1,9 @@
+{
+  "plant_id": "1131",
+  "dropdown_name": "Glenmark Life sciences Limited - 1941 (HPRO)  - 200",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1131",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1131.html",
+  "plant_name": "Plant glenmark life sciences limited",
+  "serial_number": "1941"
+}

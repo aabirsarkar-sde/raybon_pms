@@ -1,0 +1,9 @@
+{
+  "plant_id": "1038",
+  "dropdown_name": "Aarti Industries Ltd. - Saffron Div - 3120 (SPRO)  - 483W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1038",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1038.html",
+  "plant_name": "Plant aarti industries ltd. - saffron div",
+  "serial_number": "3120"
+}

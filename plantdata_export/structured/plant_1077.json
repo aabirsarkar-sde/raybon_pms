@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1077,
+  "source": {
+    "raw_file": "raw/plant_1077.html",
+    "metadata_file": "metadata/plant_1077.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1077",
+    "http_status": 200,
+    "dropdown_label": "Aarti Industries Limited - 2896 (HybridA)  - 200"
+  },
+  "plant": {
+    "name": "aarti industries limited",
+    "serial_number": "2896",
+    "capacity": "200",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "4(STPT)",
+    "stage_2": "8(PT)",
+    "stage_3": "8(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "20"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "10"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1400"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "200"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "M3/Hr",
+      "unit_raw": "(M3/Hr)",
+      "value": "8.5"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "200"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "10"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "0"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "George Fischer",
+      "model": null
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "George Fischer",
+      "model": null
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "DELACUA",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "George Fischer",
+      "model": null
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "MASS",
+      "model": null
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "MASS",
+      "model": null
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": "A10"
+    },
+    {
+      "name": "SMCV",
+      "make": "PS AUTOMATION",
+      "model": null
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200CE40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": null
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "ABB",
+      "model": "ACS560"
+    },
+    {
+      "name": "VFD",
+      "make": "ABB",
+      "model": "ACS560"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PP",
+      "model": "25 MM"
+    },
+    {
+      "dosing_pump_for": null,
+      "make": "GRUNDFOS",
+      "model": "15-4A"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3672",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 0,
+    "instruments": 9,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": null,
+    "filters": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1139",
+  "dropdown_name": "DETOX INDIA PVT. LTD. - 2841 (HPRO)  - 60W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1139",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1139.html",
+  "plant_name": "Plant detox india pvt. ltd.",
+  "serial_number": "2841"
+}

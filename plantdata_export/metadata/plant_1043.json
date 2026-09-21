@@ -1,0 +1,9 @@
+{
+  "plant_id": "1043",
+  "dropdown_name": "ALEMBIC PHARMACEUTICAL,KARKHDI - 2435 (PTRO)  - 109W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1043",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1043.html",
+  "plant_name": "Plant alembic pharmaceutical,karkhdi",
+  "serial_number": "2435"
+}

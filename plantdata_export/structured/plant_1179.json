@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1179,
+  "source": {
+    "raw_file": "raw/plant_1179.html",
+    "metadata_file": "metadata/plant_1179.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1179",
+    "http_status": 200,
+    "dropdown_label": "Nocil Limited - 3945 - 3945 (PTRO)  - 328"
+  },
+  "plant": {
+    "name": "nocil limited - 3945",
+    "serial_number": "3945",
+    "capacity": "328",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Dahej",
+  "modules": {
+    "stage_1": "20(PT)",
+    "stage_2": "22(PT)",
+    "stage_3": "12(PT)",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "54"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK 131",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 20-3",
+      "motor_make": "Grundfos",
+      "motor_kw": "4",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK 1601",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-17",
+      "motor_make": "Grundfos",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PK 1602",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-17",
+      "motor_make": "Grundfos",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PK 162",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-16SF",
+      "motor_make": "Grundfos",
+      "motor_kw": "15",
+      "motor_amp": "26"
+    },
+    {
+      "pump_code": "PK 163",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-12SB",
+      "motor_make": "Grundfos",
+      "motor_kw": "5.5",
+      "motor_amp": "10"
+    },
+    {
+      "pump_code": "PK 185",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 15-2",
+      "motor_make": "Grundfos",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "E&H",
+      "model": null
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "E&H",
+      "model": null
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "E&H",
+      "model": null
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "E&H",
+      "model": null
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "E&H",
+      "model": null
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "Orion",
+      "model": null
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "Wika",
+      "model": "A-10"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "Allen Bradley",
+      "model": "Micro Logics 400"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "ACID",
+      "make": "PROMINENT",
+      "model": "100101"
+    },
+    {
+      "dosing_pump_for": "Antiscalant",
+      "make": "PROMINENT",
+      "model": "100101"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Sand Filter",
+      "values": [
+        "30\"",
+        "12 Nos.",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 6,
+    "instruments": 7,
+    "hmi_and_plc": 1,
+    "vfd": 3,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": null,
+    "filters": 2
+  }
+}

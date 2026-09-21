@@ -1,0 +1,9 @@
+{
+  "plant_id": "1128",
+  "dropdown_name": "Lupin Limited - 1639 (PTRO)  - 600",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1128",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1128.html",
+  "plant_name": "Plant lupin limited",
+  "serial_number": "1639"
+}

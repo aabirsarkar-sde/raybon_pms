@@ -1,0 +1,9 @@
+{
+  "plant_id": "1133",
+  "dropdown_name": "Tagros Chemicals India Limited  - 3533 (PTRO)  - 350",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1133",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1133.html",
+  "plant_name": "Plant tagros chemicals india limited",
+  "serial_number": "3533"
+}

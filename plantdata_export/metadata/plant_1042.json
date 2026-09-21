@@ -1,0 +1,9 @@
+{
+  "plant_id": "1042",
+  "dropdown_name": "USV PVT LTD,SAVLI - 3283 (HPRO)  - 45W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1042",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1042.html",
+  "plant_name": "Plant usv pvt ltd,savli",
+  "serial_number": "3283"
+}

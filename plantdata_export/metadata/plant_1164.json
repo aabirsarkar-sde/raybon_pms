@@ -1,0 +1,9 @@
+{
+  "plant_id": "1164",
+  "dropdown_name": "Aarti Industries Limited - 1958 (SPRO)  - 90W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1164",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1164.html",
+  "plant_name": "Plant aarti industries limited",
+  "serial_number": "1958"
+}

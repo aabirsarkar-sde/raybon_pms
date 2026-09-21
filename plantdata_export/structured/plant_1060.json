@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1060,
+  "source": {
+    "raw_file": "raw/plant_1060.html",
+    "metadata_file": "metadata/plant_1060.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1060",
+    "http_status": 200,
+    "dropdown_label": "IPCA Laboratories Limited  - 2104 (SPRO)  - 18"
+  },
+  "plant": {
+    "name": "ipca laboratories limited",
+    "serial_number": "2104",
+    "capacity": "18",
+    "site_contact_number": "9376447933"
+  },
+  "zone": "Vadodara",
+  "modules": {
+    "stage_1": "2(ST)",
+    "stage_2": "1(ST)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "3"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m3 / hr",
+      "unit_raw": "(m3 / hr)",
+      "value": "0.850"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "S/cm",
+      "unit_raw": "(S/cm)",
+      "value": "2700"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1950"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr",
+      "unit_raw": "(mg/ltr)",
+      "value": "750"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NIL"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m3/Hr.",
+      "unit_raw": "(m3/Hr.)",
+      "value": "0.765"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "200"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr",
+      "unit_raw": "(mg/ltr)",
+      "value": "NIL"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "NIL"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "90"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK1601",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRNCM 3-23",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "2.2"
+    },
+    {
+      "pump_code": "PK1602",
+      "pump_make": "GRUNDFOSE",
+      "pump_model": "CRNCM 3-23",
+      "motor_make": "GRUNDFOSE",
+      "motor_kw": "2.2",
+      "motor_amp": "4.3"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "GEORG FISCHER",
+      "model": "9900"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-043"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "GEORG FISCHER",
+      "model": "9900"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI",
+      "make": "ALLEN BREDLEY",
+      "model": "PANEL VIEW C 400"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "NA",
+      "model": "NA"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "NA",
+      "model": "NA"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "CARTRIDGE FILTER",
+      "values": [
+        "NA",
+        "1",
+        "PP",
+        "ROCHEM"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 2,
+    "instruments": 3,
+    "hmi_and_plc": 1,
+    "vfd": 1,
+    "dosing_pumps": 1,
+    "hp_pump_accessories": null,
+    "filters": 1
+  }
+}

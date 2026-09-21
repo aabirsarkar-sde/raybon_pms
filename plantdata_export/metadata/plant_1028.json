@@ -1,0 +1,9 @@
+{
+  "plant_id": "1028",
+  "dropdown_name": "Bharuch Enviro Infrastructure Limited - 3032 (PTRO)  - 120W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1028",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1028.html",
+  "plant_name": "Plant bharuch enviro infrastructure limited",
+  "serial_number": "3032"
+}

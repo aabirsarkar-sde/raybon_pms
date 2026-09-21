@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1020,
+  "source": {
+    "raw_file": "raw/plant_1020.html",
+    "metadata_file": "metadata/plant_1020.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1020",
+    "http_status": 200,
+    "dropdown_label": "Aarti Industries Limited - Neo Division - 2405 (HPRO)  - 60W"
+  },
+  "plant": {
+    "name": "aarti industries limited - neo division",
+    "serial_number": "2405",
+    "capacity": "60w",
+    "site_contact_number": "9376447934"
+  },
+  "zone": "Dahej",
+  "modules": {
+    "stage_1": "4(NA)",
+    "stage_2": "7(NA)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "11"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "3"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "14000"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "10000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "0"
+    },
+    {
+      "position": 5,
+      "name": "Feed Hardness",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "800"
+    },
+    {
+      "position": 6,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 7,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr.",
+      "unit_raw": "(m³/Hr.)",
+      "value": "2.25"
+    },
+    {
+      "position": 8,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "2250"
+    },
+    {
+      "position": 9,
+      "name": "Permeate TDS",
+      "unit": "ppm",
+      "unit_raw": "(ppm)",
+      "value": "1000"
+    },
+    {
+      "position": 10,
+      "name": "Permeate COD",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "0"
+    },
+    {
+      "position": 11,
+      "name": "Permeate Hardness",
+      "unit": "mg/ltr.",
+      "unit_raw": "(mg/ltr.)",
+      "value": "50"
+    },
+    {
+      "position": 12,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "75"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 5-7",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "1.1",
+      "motor_amp": "2.26"
+    },
+    {
+      "pump_code": "PP1601",
+      "pump_make": "Wanner",
+      "pump_model": "G25",
+      "motor_make": "Siemens",
+      "motor_kw": "7.5",
+      "motor_amp": "16"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 10-12",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed pH Meter",
+      "make": "GEORG FISCHER",
+      "model": "PT1000"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA 560"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "GEORG FISCHER",
+      "model": "2536"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "GEORG FISCHER",
+      "model": "2536"
+    },
+    {
+      "name": "PT1621",
+      "make": "WIKA",
+      "model": "0-100"
+    },
+    {
+      "name": "PT162",
+      "make": "WIKA",
+      "model": "0-100"
+    },
+    {
+      "name": "PT1602",
+      "make": "WIKA",
+      "model": "0-100"
+    },
+    {
+      "name": "PS151",
+      "make": "ORION",
+      "model": "MZ-7 / MZ - 10"
+    },
+    {
+      "name": "PS180",
+      "make": "ORION",
+      "model": "MZ-7 / MZ - 10"
+    },
+    {
+      "name": "PS171",
+      "make": "ORION",
+      "model": "MZ-7 / MZ - 10"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "MASS",
+      "model": "0-10"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "MASS",
+      "model": "0-100"
+    },
+    {
+      "name": "SMCV",
+      "make": "Forbes Marshall Arca",
+      "model": "NA"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI",
+      "make": "Schneider",
+      "model": "XBT-N401"
+    },
+    {
+      "name": "PLC",
+      "make": "Schneider",
+      "model": "TWDLCDA40DRF"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "Schneider",
+      "model": "NA"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": null,
+      "make": "Prominent",
+      "model": "NA"
+    },
+    {
+      "dosing_pump_for": null,
+      "make": "E-Dose",
+      "model": "E-Dose"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "Motor",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "SPA 250 X 3"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517/55mm"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "Pump",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "SPA 150 x 3"
+        },
+        {
+          "label": "Tapper",
+          "value": "2517/2\" inch"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": null,
+          "value": "NA"
+        },
+        {
+          "label": null,
+          "value": "0.35"
+        },
+        {
+          "label": "V-Belt",
+          "value": "SPAX/ XPA 1525"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Bag Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "Cartridge Filter",
+      "values": [
+        "PP",
+        "30\" (3NOS)",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 4,
+      "name": "D/A Filter",
+      "values": [
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 3,
+    "instruments": 14,
+    "hmi_and_plc": 2,
+    "vfd": 1,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 4
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "plantdata_export/schema.json",
+  "title": "Legacy PlantData plant record",
+  "description": "One record per plant, parsed from the legacy /Home/GetDashboardData HTML. All data values are strings exactly as they appear in the source (HTML entities decoded, outer whitespace stripped). Nothing is case-normalised, unit-converted or coerced to numbers. Placeholders such as 'N/A', 'NA', 'na' are preserved verbatim. null means the element was empty or absent in the source. Equipment codes (e.g. PK121, PK122(S), PK1601, FE183) are kept exactly as written and no meaning is inferred from them.",
+  "version": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "plant_id",
+    "source",
+    "plant",
+    "zone",
+    "modules",
+    "design_parameters",
+    "pump_and_motor",
+    "instruments",
+    "hmi_and_plc",
+    "vfd",
+    "dosing_pumps",
+    "hp_pump_accessories",
+    "filters",
+    "legacy_counts"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "plant_id": {
+      "type": "integer",
+      "description": "Legacy system plant ID (the plantId query parameter / dropdown option value)."
+    },
+    "source": {
+      "type": "object",
+      "description": "Provenance. Not part of the plant data itself.",
+      "properties": {
+        "raw_file": {
+          "type": "string"
+        },
+        "metadata_file": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "endpoint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "http_status": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "dropdown_label": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Text of the plant's option in the legacy dropdown (original casing; the page itself renders the name in lowercase and capitalises via CSS)."
+        }
+      }
+    },
+    "plant": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "As stored in HTML (lowercase in the source; the legacy UI capitalises via CSS text-capitalize)."
+        },
+        "serial_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capacity": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Raw text, e.g. '40w'."
+        },
+        "site_contact_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "zone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modules": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Module counts per stage as raw text, e.g. '3(HPRO)', '0'.",
+      "properties": {
+        "stage_1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage_3": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage_4": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage_5": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "total": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "design_parameters": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Ordered list, exactly as rendered. Order varies between plants and a parameter name can appear more than once, so this is NOT a keyed map.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "position": {
+            "type": "integer",
+            "description": "1-based position on the page."
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "e.g. Feed Flow, Feed Conductivity, Feed TDS, Feed COD, Feed Hardness, Feed Turbidity, Permeate Flow, Permeate Conductivity, Permeate TDS, Permeate COD, Permeate Hardness, Recovery"
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "unit_raw without the surrounding parentheses."
+          },
+          "unit_raw": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Unit exactly as shown, e.g. '(m³/Hr.)'. Spellings vary."
+          },
+          "value": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "pump_and_motor": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Columns: Pump Code | Pump Make | Pump Model | Motor Make | Motor Kw | Motor Amp. null = section not rendered for this plant; [] = rendered with no rows. Row order is preserved from the source.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "pump_code",
+          "pump_make",
+          "pump_model",
+          "motor_make",
+          "motor_kw",
+          "motor_amp"
+        ],
+        "properties": {
+          "pump_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pump_make": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pump_model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "motor_make": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "motor_kw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "motor_amp": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "instruments": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Columns: Name | Make | Model. null = section not rendered for this plant; [] = rendered with no rows. Row order is preserved from the source.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "make",
+          "model"
+        ],
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "make": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "hmi_and_plc": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Columns: Name | Make | Model. null = section not rendered for this plant; [] = rendered with no rows. Row order is preserved from the source.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "make",
+          "model"
+        ],
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "make": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "vfd": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Columns: Name | Make | Model. null = section not rendered for this plant; [] = rendered with no rows. Row order is preserved from the source.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "make",
+          "model"
+        ],
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "make": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "dosing_pumps": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Columns: Dosing Pump for | Make | Model. null = section not rendered for this plant; [] = rendered with no rows. Row order is preserved from the source.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dosing_pump_for",
+          "make",
+          "model"
+        ],
+        "properties": {
+          "dosing_pump_for": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "make": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "hp_pump_accessories": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "One item per column of the legacy grid. Each column has a title (e.g. Motor, Pump, Pulsation Damper) followed by label/value pairs. Values that have no label in the source have label null. Labels are kept verbatim (e.g. 'Pully', 'Tapper', 'V-Belt').",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "position": {
+            "type": "integer"
+          },
+          "group": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "label": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "value": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "filters": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "One item per filter column. The legacy page shows the values WITHOUT field labels, so they are kept as an ordered list (normally 4 values); their meaning is not inferred.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "position": {
+            "type": "integer"
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "legacy_counts": {
+      "type": "object",
+      "description": "Section counters the legacy page set via setText(...). null = no counter emitted.",
+      "properties": {
+        "pump_and_motor": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "instruments": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "hmi_and_plc": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "vfd": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "dosing_pumps": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "hp_pump_accessories": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "filters": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

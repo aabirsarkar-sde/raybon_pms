@@ -1,0 +1,9 @@
+{
+  "plant_id": "1029",
+  "dropdown_name": "Bharuch Enviro Infrastructure Limited - 3033 (HPRO)  - 40W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1029",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1029.html",
+  "plant_name": "Plant bharuch enviro infrastructure limited",
+  "serial_number": "3033"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1059",
+  "dropdown_name": "IPCA LAB, RANU - 2103 (PTRO)  - 150W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1059",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1059.html",
+  "plant_name": "Plant ipca lab, ranu",
+  "serial_number": "2103"
+}

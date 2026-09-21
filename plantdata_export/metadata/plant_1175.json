@@ -1,0 +1,9 @@
+{
+  "plant_id": "1175",
+  "dropdown_name": "IPCA Laboratories Limited, Ank - 1737 (PTRO)  - 60W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1175",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1175.html",
+  "plant_name": "Plant ipca laboratories limited, ank",
+  "serial_number": "1737"
+}

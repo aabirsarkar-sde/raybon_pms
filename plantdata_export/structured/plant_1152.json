@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1152,
+  "source": {
+    "raw_file": "raw/plant_1152.html",
+    "metadata_file": "metadata/plant_1152.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1152",
+    "http_status": 200,
+    "dropdown_label": "Detox India Pvt. Ltd. - 2618 (HPRO)  - 500"
+  },
+  "plant": {
+    "name": "detox india pvt. ltd.",
+    "serial_number": "2618",
+    "capacity": "500",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "28",
+    "stage_2": "36",
+    "stage_3": "36",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "22.7"
+    },
+    {
+      "position": 2,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "8400"
+    },
+    {
+      "position": 3,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "6000"
+    },
+    {
+      "position": 4,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "4000"
+    },
+    {
+      "position": 5,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "11.3"
+    },
+    {
+      "position": 6,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "640"
+    },
+    {
+      "position": 7,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "320"
+    },
+    {
+      "position": 8,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "50"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-2-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "7.5",
+      "motor_amp": "10"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 32-4",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "4",
+      "motor_amp": "7.9"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "CAT",
+      "pump_model": "152R100",
+      "motor_make": "SIEMENS",
+      "motor_kw": "75",
+      "motor_amp": "129"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "LHP",
+      "motor_kw": "15",
+      "motor_amp": "27.5"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "DICKOW",
+      "pump_model": "26/210",
+      "motor_make": "LHP",
+      "motor_kw": "15",
+      "motor_amp": "27.5"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 20-2",
+      "motor_make": "BHARAT BIJLEE",
+      "motor_kw": "2.2",
+      "motor_amp": "4.45"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "Signet 3-2850"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "Georg Fischer",
+      "model": "Signet 3-2850"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-10 / MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "MASS",
+      "model": "0-100"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "MASS",
+      "model": "0-10"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536"
+    },
+    {
+      "name": "Level Switch",
+      "make": "Auromake",
+      "model": "3/8\"BSP"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM2000CE40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIGXU3512"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "SCHNEIDER",
+      "model": null
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "A-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASKAWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "EJECTOR",
+      "model": "3/4\""
+    },
+    {
+      "dosing_pump_for": "Antiscalant",
+      "make": "MILTON ROY",
+      "model": "UC-11 PP"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "300"
+        },
+        {
+          "label": "TAPPER",
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "pump",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "1200"
+        },
+        {
+          "label": "TAPPER",
+          "value": null
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "Pulsation Damper",
+          "value": "2 Ltr"
+        },
+        {
+          "label": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "FRP",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 7,
+    "instruments": 8,
+    "hmi_and_plc": 2,
+    "vfd": 3,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 1
+  }
+}

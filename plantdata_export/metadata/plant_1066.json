@@ -1,0 +1,9 @@
+{
+  "plant_id": "1066",
+  "dropdown_name": "J B Chemicals & Pharmaceuticals Limited - 1636 (PTRO)  - 35",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1066",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1066.html",
+  "plant_name": "Plant j b chemicals & pharmaceuticals limited",
+  "serial_number": "1636"
+}

@@ -1,0 +1,9 @@
+{
+  "plant_id": "1121",
+  "dropdown_name": "Cadila Pharmaceuticals Ltd. - 1515 (PTRO)  - 300",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1121",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1121.html",
+  "plant_name": "Plant cadila pharmaceuticals ltd.",
+  "serial_number": "1515"
+}

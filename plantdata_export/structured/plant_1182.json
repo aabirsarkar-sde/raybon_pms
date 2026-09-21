@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1182,
+  "source": {
+    "raw_file": "raw/plant_1182.html",
+    "metadata_file": "metadata/plant_1182.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1182",
+    "http_status": 200,
+    "dropdown_label": "Valiant Advanced Sciences Private Limited  - 3969 (HPRO)  - 82"
+  },
+  "plant": {
+    "name": "valiant advanced sciences private limited",
+    "serial_number": "3969",
+    "capacity": "82",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Dahej",
+  "modules": {
+    "stage_1": "0",
+    "stage_2": "0",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [],
+  "instruments": null,
+  "hmi_and_plc": null,
+  "vfd": null,
+  "dosing_pumps": null,
+  "hp_pump_accessories": null,
+  "filters": null,
+  "legacy_counts": {
+    "pump_and_motor": 0,
+    "instruments": null,
+    "hmi_and_plc": null,
+    "vfd": null,
+    "dosing_pumps": null,
+    "hp_pump_accessories": null,
+    "filters": null
+  }
+}

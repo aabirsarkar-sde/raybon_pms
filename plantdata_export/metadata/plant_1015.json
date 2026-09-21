@@ -1,0 +1,9 @@
+{
+  "plant_id": "1015",
+  "dropdown_name": "Glenmark Lifescience Limited - 1942 (PTRO)  - 200W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1015",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1015.html",
+  "plant_name": "Plant glenmark lifescience limited",
+  "serial_number": "1942"
+}

@@ -1,0 +1,2705 @@
+{
+  "generated_at": "2026-09-21T06:28:00+00:00",
+  "schema_version": "1.0.0",
+  "summary": {
+    "raw_html_files": 172,
+    "plants_in_plant_list": 172,
+    "plants_parsed": 172,
+    "plants_structured": 172,
+    "parse_errors": 0,
+    "plants_with_parsing_anomalies": 0,
+    "plants_with_missing_core_fields": 1,
+    "plants_with_missing_sections": 97,
+    "plants_with_full_layout": 75,
+    "distinct_section_layouts": 21,
+    "text_conservation_failures": 0,
+    "legacy_count_mismatches": 0,
+    "missing_plant_names": 0,
+    "missing_serial_numbers": 0,
+    "duplicate_plant_ids": 0,
+    "duplicate_serial_numbers": 3
+  },
+  "checks": {
+    "missing_plant_names": [],
+    "missing_serial_numbers": [],
+    "duplicate_plant_ids": [],
+    "plant_list_ids_without_raw_file": [],
+    "raw_files_without_plant_list_entry": [],
+    "duplicate_serial_numbers": {
+      "3256": [
+        1024,
+        1108
+      ],
+      "2046": [
+        1095,
+        1106
+      ],
+      "1704": [
+        1158,
+        1159
+      ]
+    },
+    "missing_core_fields": {
+      "plant.site_contact_number": [
+        1016
+      ]
+    },
+    "missing_sections": {
+      "_note": "Section heading not rendered at all by the legacy page (value null in JSON).",
+      "dosing_pumps": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        1019,
+        1045,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1095,
+        1096,
+        1099,
+        1106,
+        1108,
+        1116,
+        1117,
+        1118,
+        1120,
+        1123,
+        1140,
+        1141,
+        1142,
+        1143,
+        1158,
+        1161,
+        1164,
+        1167,
+        1170,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1180,
+        1181,
+        1182,
+        1183
+      ],
+      "filters": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1095,
+        1096,
+        1097,
+        1106,
+        1108,
+        1116,
+        1117,
+        1118,
+        1120,
+        1140,
+        1141,
+        1142,
+        1143,
+        1146,
+        1151,
+        1158,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1180,
+        1181,
+        1182,
+        1183
+      ],
+      "hmi_and_plc": [
+        5,
+        7,
+        10,
+        1066,
+        1068,
+        1081,
+        1097,
+        1099,
+        1100,
+        1113,
+        1117,
+        1120,
+        1161,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1180,
+        1181,
+        1182,
+        1183
+      ],
+      "hp_pump_accessories": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        1014,
+        1060,
+        1061,
+        1071,
+        1072,
+        1073,
+        1075,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1095,
+        1096,
+        1098,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1113,
+        1114,
+        1115,
+        1116,
+        1117,
+        1118,
+        1120,
+        1123,
+        1124,
+        1127,
+        1132,
+        1140,
+        1141,
+        1142,
+        1143,
+        1148,
+        1150,
+        1153,
+        1155,
+        1158,
+        1159,
+        1161,
+        1164,
+        1165,
+        1166,
+        1167,
+        1170,
+        1171,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1179,
+        1180,
+        1181,
+        1182,
+        1183
+      ],
+      "instruments": [
+        1061,
+        1067,
+        1107,
+        1158,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1180,
+        1181,
+        1182,
+        1183
+      ],
+      "vfd": [
+        7,
+        10,
+        1014,
+        1019,
+        1029,
+        1038,
+        1044,
+        1045,
+        1049,
+        1053,
+        1055,
+        1063,
+        1066,
+        1069,
+        1081,
+        1084,
+        1087,
+        1090,
+        1097,
+        1101,
+        1110,
+        1123,
+        1124,
+        1134,
+        1138,
+        1141,
+        1143,
+        1145,
+        1148,
+        1158,
+        1164,
+        1165,
+        1166,
+        1167,
+        1169,
+        1170,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1180,
+        1181,
+        1182,
+        1183
+      ]
+    },
+    "empty_sections": {
+      "_note": "Section rendered but contained no rows/items (value [] in JSON).",
+      "design_parameters": [
+        1063,
+        1117,
+        1135,
+        1137,
+        1140,
+        1158,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1179,
+        1180,
+        1181,
+        1182,
+        1183
+      ],
+      "pump_and_motor": [
+        1077,
+        1116,
+        1158,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1181,
+        1182,
+        1183
+      ]
+    },
+    "unexpected_fields": [],
+    "parsing_errors": [],
+    "text_conservation": {
+      "_note": "Every non-empty HTML text node was compared (as a multiset) against the JSON values plus static template labels. Entries here mean data was lost.",
+      "failures": []
+    },
+    "legacy_count_vs_parsed_rows": {
+      "_note": "The legacy page sets section counters via setText(); compared to parsed rows.",
+      "mismatches": []
+    },
+    "dropdown_label_serial_mismatch": [],
+    "values_with_embedded_tabs_or_newlines": [
+      {
+        "plant_id": 1122,
+        "value": "(µS/CM\t)"
+      },
+      {
+        "plant_id": 1122,
+        "value": "(µS/CM\t)"
+      },
+      {
+        "plant_id": 1138,
+        "value": "(µS/CM\t)"
+      },
+      {
+        "plant_id": 1138,
+        "value": "(µS/CM\t)"
+      },
+      {
+        "plant_id": 1139,
+        "value": "(µS/CM\t)"
+      },
+      {
+        "plant_id": 1139,
+        "value": "(µS/CM\t)"
+      }
+    ],
+    "placeholder_values_preserved_verbatim": {
+      "NA": 1416,
+      "N/A": 206,
+      "-": 11,
+      "NIL": 9,
+      "Nil": 4,
+      "na": 4,
+      "nA": 1
+    }
+  },
+  "design_parameters": {
+    "standard_names_in_majority_order": [
+      "Feed Flow",
+      "Feed Conductivity",
+      "Feed TDS",
+      "Feed COD",
+      "Feed Hardness",
+      "Feed Turbidity",
+      "Permeate Flow",
+      "Permeate Conductivity",
+      "Permeate TDS",
+      "Permeate COD",
+      "Permeate Hardness",
+      "Recovery"
+    ],
+    "duplicate_parameter_names": [
+      {
+        "plant_id": 1040,
+        "duplicates": {
+          "Feed Turbidity": 2
+        },
+        "occurrences": [
+          {
+            "position": 6,
+            "name": "Feed Turbidity",
+            "unit": "NTU",
+            "unit_raw": "(NTU)",
+            "value": "5"
+          },
+          {
+            "position": 13,
+            "name": "Feed Turbidity",
+            "unit": "NTU",
+            "unit_raw": "(NTU)",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "plant_id": 1068,
+        "duplicates": {
+          "Recovery": 2
+        },
+        "occurrences": [
+          {
+            "position": 10,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "85"
+          },
+          {
+            "position": 11,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "85"
+          }
+        ]
+      },
+      {
+        "plant_id": 1071,
+        "duplicates": {
+          "Feed Flow": 3,
+          "Feed Conductivity": 2,
+          "Feed TDS": 2
+        },
+        "occurrences": [
+          {
+            "position": 1,
+            "name": "Feed Flow",
+            "unit": "M3/Hr",
+            "unit_raw": "(M3/Hr)",
+            "value": "60"
+          },
+          {
+            "position": 2,
+            "name": "Feed Flow",
+            "unit": "M3/Hr",
+            "unit_raw": "(M3/Hr)",
+            "value": "60"
+          },
+          {
+            "position": 3,
+            "name": "Feed Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "3500"
+          },
+          {
+            "position": 4,
+            "name": "Feed Flow",
+            "unit": "M3/Hr",
+            "unit_raw": "(M3/Hr)",
+            "value": "60"
+          },
+          {
+            "position": 5,
+            "name": "Feed Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "3500"
+          },
+          {
+            "position": 6,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "2500"
+          },
+          {
+            "position": 7,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "2500"
+          }
+        ]
+      },
+      {
+        "plant_id": 1072,
+        "duplicates": {
+          "Permeate Conductivity": 2,
+          "Permeate TDS": 2
+        },
+        "occurrences": [
+          {
+            "position": 8,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "1000"
+          },
+          {
+            "position": 9,
+            "name": "Permeate TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "500"
+          },
+          {
+            "position": 10,
+            "name": "Permeate Conductivity",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "1000"
+          },
+          {
+            "position": 11,
+            "name": "Permeate TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "500"
+          }
+        ]
+      },
+      {
+        "plant_id": 1073,
+        "duplicates": {
+          "Feed Flow": 2,
+          "Feed COD": 2
+        },
+        "occurrences": [
+          {
+            "position": 1,
+            "name": "Feed Flow",
+            "unit": "M3/Hr",
+            "unit_raw": "(M3/Hr)",
+            "value": "16.4"
+          },
+          {
+            "position": 2,
+            "name": "Feed Flow",
+            "unit": "M3/Hr",
+            "unit_raw": "(M3/Hr)",
+            "value": "16.4"
+          },
+          {
+            "position": 5,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "150"
+          },
+          {
+            "position": 6,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "1200"
+          }
+        ]
+      },
+      {
+        "plant_id": 1075,
+        "duplicates": {
+          "Permeate Hardness": 2
+        },
+        "occurrences": [
+          {
+            "position": 10,
+            "name": "Permeate Hardness",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "NA"
+          },
+          {
+            "position": 11,
+            "name": "Permeate Hardness",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "NA"
+          }
+        ]
+      },
+      {
+        "plant_id": 1091,
+        "duplicates": {
+          "Permeate Hardness": 2
+        },
+        "occurrences": [
+          {
+            "position": 10,
+            "name": "Permeate Hardness",
+            "unit": "mg/ltr.",
+            "unit_raw": "(mg/ltr.)",
+            "value": "NA"
+          },
+          {
+            "position": 11,
+            "name": "Permeate Hardness",
+            "unit": "mg/ltr.",
+            "unit_raw": "(mg/ltr.)",
+            "value": "NA"
+          }
+        ]
+      },
+      {
+        "plant_id": 1095,
+        "duplicates": {
+          "Recovery": 2
+        },
+        "occurrences": [
+          {
+            "position": 12,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "80"
+          },
+          {
+            "position": 13,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "plant_id": 1096,
+        "duplicates": {
+          "Permeate Flow": 2
+        },
+        "occurrences": [
+          {
+            "position": 7,
+            "name": "Permeate Flow",
+            "unit": "NTU",
+            "unit_raw": "(NTU)",
+            "value": "<50"
+          },
+          {
+            "position": 8,
+            "name": "Permeate Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "1.8"
+          }
+        ]
+      },
+      {
+        "plant_id": 1099,
+        "duplicates": {
+          "Feed Conductivity": 2,
+          "Recovery": 2
+        },
+        "occurrences": [
+          {
+            "position": 1,
+            "name": "Feed Conductivity",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "17.4"
+          },
+          {
+            "position": 2,
+            "name": "Feed Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "12400"
+          },
+          {
+            "position": 5,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "75"
+          },
+          {
+            "position": 10,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "55"
+          }
+        ]
+      },
+      {
+        "plant_id": 1104,
+        "duplicates": {
+          "Feed COD": 2
+        },
+        "occurrences": [
+          {
+            "position": 4,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "1000"
+          },
+          {
+            "position": 5,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "1000"
+          }
+        ]
+      },
+      {
+        "plant_id": 1105,
+        "duplicates": {
+          "Recovery": 2
+        },
+        "occurrences": [
+          {
+            "position": 12,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "NA"
+          },
+          {
+            "position": 13,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "NA"
+          }
+        ]
+      },
+      {
+        "plant_id": 1106,
+        "duplicates": {
+          "Feed Turbidity": 2
+        },
+        "occurrences": [
+          {
+            "position": 6,
+            "name": "Feed Turbidity",
+            "unit": "NTU",
+            "unit_raw": "(NTU)",
+            "value": "<20"
+          },
+          {
+            "position": 7,
+            "name": "Feed Turbidity",
+            "unit": "NTU",
+            "unit_raw": "(NTU)",
+            "value": "<20"
+          }
+        ]
+      },
+      {
+        "plant_id": 1108,
+        "duplicates": {
+          "Feed Flow": 2
+        },
+        "occurrences": [
+          {
+            "position": 1,
+            "name": "Feed Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "62.5"
+          },
+          {
+            "position": 2,
+            "name": "Feed Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "62.5"
+          }
+        ]
+      },
+      {
+        "plant_id": 1123,
+        "duplicates": {
+          "Feed TDS": 2,
+          "Permeate COD": 2
+        },
+        "occurrences": [
+          {
+            "position": 4,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "1000"
+          },
+          {
+            "position": 7,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "100"
+          },
+          {
+            "position": 8,
+            "name": "Permeate COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "Nil"
+          },
+          {
+            "position": 9,
+            "name": "Permeate COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "Nil"
+          }
+        ]
+      },
+      {
+        "plant_id": 1124,
+        "duplicates": {
+          "Permeate Conductivity": 2
+        },
+        "occurrences": [
+          {
+            "position": 4,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "360"
+          },
+          {
+            "position": 5,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "360"
+          }
+        ]
+      },
+      {
+        "plant_id": 1131,
+        "duplicates": {
+          "Permeate Conductivity": 2
+        },
+        "occurrences": [
+          {
+            "position": 8,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "3000"
+          },
+          {
+            "position": 9,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "3000"
+          }
+        ]
+      },
+      {
+        "plant_id": 1141,
+        "duplicates": {
+          "Feed COD": 2,
+          "Permeate Conductivity": 2,
+          "Permeate Hardness": 2
+        },
+        "occurrences": [
+          {
+            "position": 4,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "250"
+          },
+          {
+            "position": 5,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "250"
+          },
+          {
+            "position": 9,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": ">400"
+          },
+          {
+            "position": 10,
+            "name": "Permeate Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": ">400"
+          },
+          {
+            "position": 13,
+            "name": "Permeate Hardness",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "<20"
+          },
+          {
+            "position": 14,
+            "name": "Permeate Hardness",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "<20"
+          }
+        ]
+      },
+      {
+        "plant_id": 1153,
+        "duplicates": {
+          "Feed TDS": 2
+        },
+        "occurrences": [
+          {
+            "position": 3,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "<5110"
+          },
+          {
+            "position": 4,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "<360"
+          }
+        ]
+      },
+      {
+        "plant_id": 1154,
+        "duplicates": {
+          "Feed Flow": 2,
+          "Feed TDS": 2
+        },
+        "occurrences": [
+          {
+            "position": 1,
+            "name": "Feed Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "17.5"
+          },
+          {
+            "position": 2,
+            "name": "Feed Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "17.5"
+          },
+          {
+            "position": 4,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "7500"
+          },
+          {
+            "position": 5,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "7500"
+          }
+        ]
+      },
+      {
+        "plant_id": 1157,
+        "duplicates": {
+          "Feed Flow": 2
+        },
+        "occurrences": [
+          {
+            "position": 1,
+            "name": "Feed Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "6.3"
+          },
+          {
+            "position": 2,
+            "name": "Feed Flow",
+            "unit": "m³/Hr",
+            "unit_raw": "(m³/Hr)",
+            "value": "6.3"
+          }
+        ]
+      },
+      {
+        "plant_id": 1161,
+        "duplicates": {
+          "Feed TDS": 2
+        },
+        "occurrences": [
+          {
+            "position": 3,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "150"
+          },
+          {
+            "position": 4,
+            "name": "Feed TDS",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "Nil"
+          }
+        ]
+      },
+      {
+        "plant_id": 1162,
+        "duplicates": {
+          "Feed Conductivity": 2,
+          "Permeate COD": 2
+        },
+        "occurrences": [
+          {
+            "position": 2,
+            "name": "Feed Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "21000"
+          },
+          {
+            "position": 3,
+            "name": "Feed Conductivity",
+            "unit": "µS/CM",
+            "unit_raw": "(µS/CM)",
+            "value": "21000"
+          },
+          {
+            "position": 11,
+            "name": "Permeate COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "100"
+          },
+          {
+            "position": 12,
+            "name": "Permeate COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "100"
+          }
+        ]
+      },
+      {
+        "plant_id": 1170,
+        "duplicates": {
+          "Recovery": 2
+        },
+        "occurrences": [
+          {
+            "position": 12,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "NA"
+          },
+          {
+            "position": 13,
+            "name": "Recovery",
+            "unit": "%",
+            "unit_raw": "(%)",
+            "value": "90"
+          }
+        ]
+      },
+      {
+        "plant_id": 1172,
+        "duplicates": {
+          "Feed COD": 2,
+          "Permeate Hardness": 2
+        },
+        "occurrences": [
+          {
+            "position": 4,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "700"
+          },
+          {
+            "position": 5,
+            "name": "Feed COD",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "700"
+          },
+          {
+            "position": 12,
+            "name": "Permeate Hardness",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "NA"
+          },
+          {
+            "position": 13,
+            "name": "Permeate Hardness",
+            "unit": "PPM",
+            "unit_raw": "(PPM)",
+            "value": "NA"
+          }
+        ]
+      }
+    ],
+    "non_standard_order": [
+      {
+        "plant_id": 5,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Permeate TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate COD",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1083,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate COD",
+          "Permeate TDS",
+          "Permeate Hardness",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1097,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Recovery",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate TDS"
+        ]
+      },
+      {
+        "plant_id": 1099,
+        "order": [
+          "Feed Conductivity",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Recovery",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate TDS",
+          "Permeate COD",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1101,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Recovery",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate TDS",
+          "Permeate COD"
+        ]
+      },
+      {
+        "plant_id": 1103,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Turbidity",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate COD",
+          "Permeate TDS",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1110,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Permeate TDS",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1111,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate COD",
+          "Permeate TDS",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1112,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate COD",
+          "Permeate TDS",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1113,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Permeate TDS",
+          "Permeate COD",
+          "Feed Turbidity",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1114,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Permeate TDS",
+          "Feed COD",
+          "Permeate COD",
+          "Feed Turbidity",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1115,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Permeate TDS",
+          "Feed COD",
+          "Permeate COD",
+          "Feed Turbidity",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1118,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate TDS",
+          "Recovery",
+          "Permeate COD"
+        ]
+      },
+      {
+        "plant_id": 1123,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Permeate Flow",
+          "Feed TDS",
+          "Permeate COD",
+          "Permeate COD"
+        ]
+      },
+      {
+        "plant_id": 1124,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Permeate Conductivity"
+        ]
+      },
+      {
+        "plant_id": 1125,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Turbidity",
+          "Permeate TDS",
+          "Permeate COD"
+        ]
+      },
+      {
+        "plant_id": 1126,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Turbidity",
+          "Permeate TDS",
+          "Permeate COD",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1127,
+        "order": [
+          "Feed Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Permeate Flow",
+          "Permeate Conductivity",
+          "Permeate TDS",
+          "Permeate COD",
+          "Permeate Hardness",
+          "Recovery",
+          "Feed Turbidity"
+        ]
+      },
+      {
+        "plant_id": 1142,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Permeate Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate TDS",
+          "Permeate COD",
+          "Permeate Hardness",
+          "Recovery"
+        ]
+      },
+      {
+        "plant_id": 1143,
+        "order": [
+          "Feed Flow",
+          "Permeate Flow",
+          "Feed Conductivity",
+          "Feed TDS",
+          "Feed COD",
+          "Feed Hardness",
+          "Feed Turbidity",
+          "Permeate Conductivity",
+          "Permeate TDS",
+          "Permeate COD",
+          "Recovery",
+          "Permeate Hardness"
+        ]
+      }
+    ],
+    "unknown_parameter_names": [],
+    "plants_missing_standard_parameter": {
+      "Feed COD": [
+        1062,
+        1097,
+        1108,
+        1124,
+        1132,
+        1150,
+        1153,
+        1161
+      ],
+      "Feed Flow": [
+        1099
+      ],
+      "Feed Hardness": [
+        1068,
+        1073,
+        1097,
+        1099,
+        1100,
+        1101,
+        1103,
+        1108,
+        1110,
+        1113,
+        1114,
+        1115,
+        1116,
+        1123,
+        1124,
+        1125,
+        1126,
+        1132,
+        1133,
+        1134,
+        1150,
+        1151,
+        1152,
+        1154,
+        1155,
+        1156,
+        1157,
+        1159,
+        1160,
+        1161
+      ],
+      "Feed TDS": [
+        1124,
+        1150
+      ],
+      "Feed Turbidity": [
+        1097,
+        1099,
+        1100,
+        1101,
+        1108,
+        1110,
+        1123,
+        1124,
+        1150,
+        1152
+      ],
+      "Permeate COD": [
+        1065,
+        1075,
+        1091,
+        1097,
+        1107,
+        1108,
+        1109,
+        1110,
+        1124,
+        1132,
+        1150,
+        1152,
+        1161
+      ],
+      "Permeate Conductivity": [
+        1065
+      ],
+      "Permeate Flow": [
+        1065
+      ],
+      "Permeate Hardness": [
+        5,
+        1065,
+        1067,
+        1068,
+        1097,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115,
+        1116,
+        1118,
+        1120,
+        1121,
+        1123,
+        1124,
+        1125,
+        1126,
+        1132,
+        1133,
+        1134,
+        1136,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1159,
+        1160,
+        1161
+      ],
+      "Permeate TDS": [
+        1061,
+        1065,
+        1123,
+        1124,
+        1150
+      ],
+      "Recovery": [
+        1123,
+        1124,
+        1125,
+        1150
+      ]
+    },
+    "unit_spellings_by_parameter": {
+      "Feed COD": {
+        "(PPM)": 71,
+        "(mg/ltr.)": 70,
+        "(mg/ltr)": 10,
+        "(NA)": 1
+      },
+      "Feed Conductivity": {
+        "(µS/CM)": 136,
+        "(μS/CM)": 14,
+        "(m³/Hr)": 3,
+        "(µS/CM\t)": 3,
+        "(PPM)": 2,
+        "(S/cm)": 1
+      },
+      "Feed Flow": {
+        "(m³/Hr.)": 66,
+        "(m³/Hr)": 60,
+        "(M3/Hr)": 24,
+        "(m3/Hr.)": 8,
+        "(m3/hr)": 1,
+        "(m3 / hr)": 1,
+        "(M3/Hr.)": 1
+      },
+      "Feed Hardness": {
+        "(PPM)": 121,
+        "(ppm)": 4,
+        "(-)": 1
+      },
+      "Feed TDS": {
+        "(PPM)": 87,
+        "(ppm)": 69,
+        "(µS/CM)": 1,
+        "(mg/ltr)": 1,
+        "(ppm )": 1
+      },
+      "Feed Turbidity": {
+        "(NTU)": 145,
+        "(PPM)": 3
+      },
+      "Permeate COD": {
+        "(mg/ltr.)": 69,
+        "(PPM)": 66,
+        "(mg/ltr)": 9,
+        "(NA)": 1
+      },
+      "Permeate Conductivity": {
+        "(µS/CM)": 135,
+        "(μS/CM)": 14,
+        "(PPM)": 6,
+        "(µS/CM\t)": 3,
+        "(μs/cm)": 1
+      },
+      "Permeate Flow": {
+        "(m³/Hr.)": 67,
+        "(m³/Hr)": 55,
+        "(M3/Hr)": 20,
+        "(m3/Hr.)": 10,
+        "(µS/CM)": 1,
+        "(NTU)": 1,
+        "(PPM)": 1,
+        "(M3/Hr.)": 1
+      },
+      "Permeate Hardness": {
+        "(mg/ltr.)": 71,
+        "(PPM)": 42,
+        "(mg/ltr)": 4,
+        "(NA)": 1
+      },
+      "Permeate TDS": {
+        "(PPM)": 79,
+        "(ppm)": 70,
+        "(µS/CM)": 2,
+        "(mg/ltr)": 1
+      },
+      "Recovery": {
+        "(%)": 156,
+        "(PPM)": 1
+      }
+    }
+  },
+  "structure": {
+    "full_layout_sections": [
+      "Plant",
+      "Modules",
+      "Zone:*",
+      "Design Parameters",
+      "Pump And Motor",
+      "Instruments",
+      "HMI and PLC",
+      "VFD",
+      "Dosing Pump",
+      "HP Pump Accessories",
+      "Filters"
+    ],
+    "majority_layout": [
+      "Plant",
+      "Modules",
+      "Zone:*",
+      "Design Parameters",
+      "Pump And Motor",
+      "Instruments",
+      "HMI and PLC",
+      "VFD",
+      "Dosing Pump",
+      "HP Pump Accessories",
+      "Filters"
+    ],
+    "layouts": [
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 75
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "VFD"
+        ],
+        "plant_count": 21
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "Filters"
+        ],
+        "plant_count": 18
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 13
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor"
+        ],
+        "plant_count": 9
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "Dosing Pump",
+          "Filters"
+        ],
+        "plant_count": 6
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC"
+        ],
+        "plant_count": 5
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "Filters"
+        ],
+        "plant_count": 4
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "VFD"
+        ],
+        "plant_count": 3
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments"
+        ],
+        "plant_count": 3
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 2
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "Filters"
+        ],
+        "plant_count": 2
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 2
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ],
+        "plant_count": 2
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 1
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 1
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ],
+        "plant_count": 1
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "VFD",
+          "HP Pump Accessories",
+          "Filters"
+        ],
+        "plant_count": 1
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "VFD",
+          "Dosing Pump",
+          "Filters"
+        ],
+        "plant_count": 1
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "HMI and PLC"
+        ],
+        "plant_count": 1
+      },
+      {
+        "sections": [
+          "Plant",
+          "Modules",
+          "Zone:*",
+          "Design Parameters",
+          "Pump And Motor",
+          "Instruments",
+          "VFD",
+          "Filters"
+        ],
+        "plant_count": 1
+      }
+    ],
+    "plants_differing_from_full_layout": [
+      {
+        "plant_id": 5,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 6,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 7,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 8,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 10,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1014,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1019,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump"
+        ]
+      },
+      {
+        "plant_id": 1029,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1038,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1044,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1045,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump"
+        ]
+      },
+      {
+        "plant_id": 1049,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1053,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1055,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1060,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1061,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1063,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1066,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1067,
+        "missing_sections_vs_full_layout": [
+          "Instruments"
+        ]
+      },
+      {
+        "plant_id": 1068,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC"
+        ]
+      },
+      {
+        "plant_id": 1069,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1071,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1072,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1073,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1075,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1077,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1078,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1079,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1080,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1081,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1082,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1083,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1084,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1085,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1086,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1087,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1088,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1089,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1090,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1091,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1092,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1095,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1096,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1097,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "VFD",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1098,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1099,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "Dosing Pump"
+        ]
+      },
+      {
+        "plant_id": 1100,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC"
+        ]
+      },
+      {
+        "plant_id": 1101,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1106,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1107,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1108,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1109,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1110,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1113,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1114,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1115,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1116,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1117,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1118,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1120,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1123,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1124,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1127,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1132,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1134,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1138,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1140,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1141,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1142,
+        "missing_sections_vs_full_layout": [
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1143,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1145,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1146,
+        "missing_sections_vs_full_layout": [
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1148,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1150,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1151,
+        "missing_sections_vs_full_layout": [
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1153,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1155,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1158,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1159,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1161,
+        "missing_sections_vs_full_layout": [
+          "HMI and PLC",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1164,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1165,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1166,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1167,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1169,
+        "missing_sections_vs_full_layout": [
+          "VFD"
+        ]
+      },
+      {
+        "plant_id": 1170,
+        "missing_sections_vs_full_layout": [
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1171,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1173,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1174,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1175,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1176,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1177,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1179,
+        "missing_sections_vs_full_layout": [
+          "HP Pump Accessories"
+        ]
+      },
+      {
+        "plant_id": 1180,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1181,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1182,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      },
+      {
+        "plant_id": 1183,
+        "missing_sections_vs_full_layout": [
+          "Instruments",
+          "HMI and PLC",
+          "VFD",
+          "Dosing Pump",
+          "HP Pump Accessories",
+          "Filters"
+        ]
+      }
+    ]
+  },
+  "anomalies_by_plant": {}
+}

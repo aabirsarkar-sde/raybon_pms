@@ -1,0 +1,9 @@
+{
+  "plant_id": "1052",
+  "dropdown_name": "ALEMBIC FORMULATION UNIT 4, JAROD - 3061 (PTRO)  - 100W",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1052",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1052.html",
+  "plant_name": "Plant alembic formulation unit 4, jarod",
+  "serial_number": "3061"
+}

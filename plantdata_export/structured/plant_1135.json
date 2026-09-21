@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1135,
+  "source": {
+    "raw_file": "raw/plant_1135.html",
+    "metadata_file": "metadata/plant_1135.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1135",
+    "http_status": 200,
+    "dropdown_label": "Sun Pharmaceuticals Limited - 1890 (PTRO)  - 130"
+  },
+  "plant": {
+    "name": "sun pharmaceuticals limited",
+    "serial_number": "1890",
+    "capacity": "130",
+    "site_contact_number": "9100000000"
+  },
+  "zone": "Ankleshwar",
+  "modules": {
+    "stage_1": "8",
+    "stage_2": "12",
+    "stage_3": "10",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "0"
+  },
+  "design_parameters": [],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK131",
+      "pump_make": "Grundfos",
+      "pump_model": "CRN 10-5",
+      "motor_make": "Grundfos",
+      "motor_kw": "2.2",
+      "motor_amp": "4.4"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "WANNER",
+      "pump_model": "G-35",
+      "motor_make": "Hydracell",
+      "motor_kw": "15",
+      "motor_amp": "28"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "SHAKTI",
+      "pump_model": "BM8A25N",
+      "motor_make": "SHAKTI",
+      "motor_kw": "4",
+      "motor_amp": "10"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "SHAKTI",
+      "pump_model": "BM8A25N",
+      "motor_make": "SHAKTI",
+      "motor_kw": "4",
+      "motor_amp": "10"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "3-2536-P0"
+    },
+    {
+      "name": "Feed Cond. Meter",
+      "make": "DELACUA",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-043"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": "0-100"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-10 / MZ-7"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "MASS",
+      "model": "0-10"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "0-100"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMISTO715"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "J-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "PVDF",
+      "model": "NA"
+    },
+    {
+      "dosing_pump_for": "ROHIB-28",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": [
+    {
+      "position": 1,
+      "group": "MOTOR",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "160"
+        },
+        {
+          "label": "TAPPER",
+          "value": "2517"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "group": "PUMP",
+      "entries": [
+        {
+          "label": "Pully",
+          "value": "200"
+        },
+        {
+          "label": "TAPPER",
+          "value": "3020"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "group": "Pulsation Damper",
+      "entries": [
+        {
+          "label": "NA",
+          "value": "2 Ltr"
+        },
+        {
+          "label": "V-Belt",
+          "value": "XPA 1650"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "position": 1,
+      "name": "Sand Filter",
+      "values": [
+        "3072",
+        "FRP",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Cartridge Filter",
+      "values": [
+        "30\"",
+        "SS",
+        "NA",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 4,
+    "instruments": 8,
+    "hmi_and_plc": 2,
+    "vfd": 2,
+    "dosing_pumps": 2,
+    "hp_pump_accessories": 3,
+    "filters": 2
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "plant_id": 1115,
+  "source": {
+    "raw_file": "raw/plant_1115.html",
+    "metadata_file": "metadata/plant_1115.json",
+    "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1115",
+    "http_status": 200,
+    "dropdown_label": "UPL Limited - Unit 5 - 3258 (HybridA)  - 1000"
+  },
+  "plant": {
+    "name": "upl limited - unit 5",
+    "serial_number": "3258",
+    "capacity": "1000",
+    "site_contact_number": "9376447946"
+  },
+  "zone": "Jhagadia",
+  "modules": {
+    "stage_1": "8(STPT)",
+    "stage_2": "16(PT)",
+    "stage_3": "0",
+    "stage_4": "0",
+    "stage_5": "0",
+    "total": "24"
+  },
+  "design_parameters": [
+    {
+      "position": 1,
+      "name": "Feed Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "50"
+    },
+    {
+      "position": 2,
+      "name": "Permeate Flow",
+      "unit": "m³/Hr",
+      "unit_raw": "(m³/Hr)",
+      "value": "354"
+    },
+    {
+      "position": 3,
+      "name": "Feed Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "14000"
+    },
+    {
+      "position": 4,
+      "name": "Permeate Conductivity",
+      "unit": "µS/CM",
+      "unit_raw": "(µS/CM)",
+      "value": "1400"
+    },
+    {
+      "position": 5,
+      "name": "Feed TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "10000"
+    },
+    {
+      "position": 6,
+      "name": "Permeate TDS",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1000"
+    },
+    {
+      "position": 7,
+      "name": "Feed COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "1000"
+    },
+    {
+      "position": 8,
+      "name": "Permeate COD",
+      "unit": "PPM",
+      "unit_raw": "(PPM)",
+      "value": "100"
+    },
+    {
+      "position": 9,
+      "name": "Feed Turbidity",
+      "unit": "NTU",
+      "unit_raw": "(NTU)",
+      "value": "20"
+    },
+    {
+      "position": 10,
+      "name": "Recovery",
+      "unit": "%",
+      "unit_raw": "(%)",
+      "value": "85"
+    }
+  ],
+  "pump_and_motor": [
+    {
+      "pump_code": "PK121",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-2-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "7.5",
+      "motor_amp": "14"
+    },
+    {
+      "pump_code": "PK131",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 64-2-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "11",
+      "motor_amp": "19.4"
+    },
+    {
+      "pump_code": "PK160",
+      "pump_make": "OSNA",
+      "pump_model": "NA",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "90",
+      "motor_amp": "146"
+    },
+    {
+      "pump_code": "PK1601",
+      "pump_make": "DICKOW",
+      "pump_model": "50/210",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "18.5",
+      "motor_amp": "33"
+    },
+    {
+      "pump_code": "PK162",
+      "pump_make": "DICKOW",
+      "pump_model": "50/210",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "18.5",
+      "motor_amp": "33"
+    },
+    {
+      "pump_code": "PK163",
+      "pump_make": "DICKOW",
+      "pump_model": "50/210",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "18.5",
+      "motor_amp": "33"
+    },
+    {
+      "pump_code": "PK195",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 45-2-2",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "5.5",
+      "motor_amp": "11"
+    },
+    {
+      "pump_code": "PK185",
+      "pump_make": "GRUNDFOS",
+      "pump_model": "CRN 32-1",
+      "motor_make": "GRUNDFOS",
+      "motor_kw": "2.2",
+      "motor_amp": "4.5"
+    }
+  ],
+  "instruments": [
+    {
+      "name": "Feed Cond. Meter",
+      "make": "EUTECH",
+      "model": "ALPHA CON 560"
+    },
+    {
+      "name": "Perm. Cond. Meter",
+      "make": "DELACUA",
+      "model": "PCC-043"
+    },
+    {
+      "name": "Feed Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536"
+    },
+    {
+      "name": "Perm. Flow Trans.",
+      "make": "Georg Fischer",
+      "model": "2536"
+    },
+    {
+      "name": "Feed pH Meter",
+      "make": "DELACUA",
+      "model": "PHC-065"
+    },
+    {
+      "name": "Feed ORP Meter",
+      "make": "EUTECH",
+      "model": "ORPC-1665"
+    },
+    {
+      "name": "Pressure Transmitter",
+      "make": "WIKA",
+      "model": "A10"
+    },
+    {
+      "name": "Pressure Gauge-1",
+      "make": "WIKA",
+      "model": "M-63"
+    },
+    {
+      "name": "Pressure Gauge-2",
+      "make": "WIKA",
+      "model": "MM-100"
+    },
+    {
+      "name": "Pressure Switch",
+      "make": "ORION",
+      "model": "MZ-10 / MZ-7"
+    }
+  ],
+  "hmi_and_plc": [
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "TM200C40T"
+    },
+    {
+      "name": "HMI & PLC",
+      "make": "SCHNEIDER",
+      "model": "HMIXGU3512"
+    }
+  ],
+  "vfd": [
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    },
+    {
+      "name": "VFD",
+      "make": "YASAKWA",
+      "model": "V-1000"
+    }
+  ],
+  "dosing_pumps": [
+    {
+      "dosing_pump_for": "HCL",
+      "make": "EJECTOR",
+      "model": "3/4\""
+    },
+    {
+      "dosing_pump_for": "ANTISCALANT",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    },
+    {
+      "dosing_pump_for": "SMBS",
+      "make": "E-DOSE",
+      "model": "IMP 64"
+    }
+  ],
+  "hp_pump_accessories": null,
+  "filters": [
+    {
+      "position": 1,
+      "name": "Cartridge Filter",
+      "values": [
+        "40\"",
+        "PP",
+        "20 NOS.",
+        "NA"
+      ]
+    }
+  ],
+  "legacy_counts": {
+    "pump_and_motor": 8,
+    "instruments": 10,
+    "hmi_and_plc": 2,
+    "vfd": 3,
+    "dosing_pumps": 3,
+    "hp_pump_accessories": null,
+    "filters": 1
+  }
+}

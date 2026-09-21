@@ -1,0 +1,9 @@
+{
+  "plant_id": "1089",
+  "dropdown_name": "Ganesh Polychem Ltd. - 3053 (HPRO)  - 100",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1089",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1089.html",
+  "plant_name": "Plant ganesh polychem ltd.",
+  "serial_number": "3053"
+}

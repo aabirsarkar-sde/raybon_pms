@@ -1,0 +1,9 @@
+{
+  "plant_id": "1161",
+  "dropdown_name": "Solvay Specialities India Pvt. Ltd - 1796 (SPRO)  - 228",
+  "endpoint": "https://zd.plantdata.athsoftware.com/Home/GetDashboardData?plantId=1161",
+  "http_status": 200,
+  "file": "plantdata_export/raw/plant_1161.html",
+  "plant_name": "Plant solvay specialities india pvt. ltd",
+  "serial_number": "1796"
+}
