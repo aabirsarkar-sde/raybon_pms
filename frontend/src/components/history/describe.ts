@@ -16,6 +16,21 @@ export interface Area {
 }
 
 const DERIVED = new Set(["value_numeric", "motor_kw_numeric", "motor_amp_numeric", "updated_at", "created_at"])
+// Document columns that follow from the file itself or say where it is stored: not worth a history line.
+const DOCUMENT_INTERNAL = new Set(["content_type", "storage", "storage_key", "uploaded_by"])
+// Keep in sync with CATEGORIES in api/pdm_api/documents.py.
+const DOCUMENT_CATEGORIES: Record<string, string> = {
+  pid: "P&ID",
+  electrical: "Electrical drawing",
+  mechanical: "Mechanical drawing",
+  layout: "Plant layout",
+  manual: "Manual / O&M",
+  datasheet: "Datasheet",
+  report: "Report",
+  certificate: "Certificate",
+  photo: "Site photo",
+  other: "Other",
+}
 
 export const AREAS: Record<string, Area> = {
   plants: {
@@ -31,6 +46,20 @@ export const AREAS: Record<string, Area> = {
     noun: "stage",
     labelField: "stage",
     fields: { value_text: "As recorded", quantity: "Quantity", module_type: "Type" },
+  },
+  plant_documents: {
+    key: "documents",
+    title: "Documents",
+    noun: "document",
+    labelField: "title",
+    fields: {
+      title: "Title",
+      category: "Category",
+      file_name: "File",
+      byte_size: "Size (bytes)",
+      sha256: "File checksum",
+      description: "Notes",
+    },
   },
 }
 for (const s of SECTIONS) {
@@ -103,11 +132,17 @@ function buildLabels(plant: PlantDoc, entries: HistoryEntry[]) {
   return { labels, parents }
 }
 
-function summarize(row: Record<string, Json> | null, area: Area): [string, Json][] {
+/** A logged value as people should read it (document category keys become their labels). */
+function shown(table: string, col: string, v: Json): Json {
+  if (table === "plant_documents" && col === "category" && typeof v === "string") return DOCUMENT_CATEGORIES[v] ?? v
+  return v
+}
+
+function summarize(table: string, row: Record<string, Json> | null, area: Area): [string, Json][] {
   if (!row) return []
   return Object.entries(area.fields)
     .filter(([k]) => row[k] !== null && row[k] !== undefined)
-    .map(([k, label]) => [label, row[k]])
+    .map(([k, label]) => [label, shown(table, k, row[k])])
 }
 
 export function describe(plant: PlantDoc, entries: HistoryEntry[], zones: Zone[] = []): ChangeSet[] {
@@ -139,6 +174,7 @@ export function describe(plant: PlantDoc, entries: HistoryEntry[], zones: Zone[]
       if (e.operation === "UPDATE") {
         const col = e.column_name ?? ""
         if (DERIVED.has(col)) continue
+        if (e.table_name === "plant_documents" && DOCUMENT_INTERNAL.has(col)) continue
         if (col === "position") {
           // Shifts caused by an insert/delete in the same request are implied; plain reorders are summarised.
           if (!structural.has(e.table_name)) reorders.set(e.table_name, (reorders.get(e.table_name) ?? 0) + 1)
@@ -151,8 +187,8 @@ export function describe(plant: PlantDoc, entries: HistoryEntry[], zones: Zone[]
           area,
           row: rowLabel(e, area),
           field: area.fields[col] ?? col,
-          old: isZone ? zoneName(e.old_value) : e.old_value,
-          new: isZone ? zoneName(e.new_value) : e.new_value,
+          old: isZone ? zoneName(e.old_value) : shown(e.table_name, col, e.old_value),
+          new: isZone ? zoneName(e.new_value) : shown(e.table_name, col, e.new_value),
         })
       } else {
         const img = e.operation === "INSERT" ? e.new_row : e.old_row
@@ -161,7 +197,7 @@ export function describe(plant: PlantDoc, entries: HistoryEntry[], zones: Zone[]
           entry: e,
           area,
           row: rowLabel(e, area),
-          values: summarize(img, area),
+          values: summarize(e.table_name, img, area),
         })
       }
     }
