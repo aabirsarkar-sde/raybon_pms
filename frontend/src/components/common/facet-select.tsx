@@ -82,6 +82,12 @@ export function FacetSelect({
           variant="outline"
           role="combobox"
           aria-expanded={open}
+          // A combobox does not take its accessible name from its content.
+          aria-label={
+            selected.length === 0
+              ? `${label} filter`
+              : `${label} filter: ${selected.length === 1 ? selected[0] : `${selected.length} selected`}`
+          }
           disabled={disabled}
           className={cn("h-9 min-w-0 justify-between gap-1 font-normal", className)}
         >

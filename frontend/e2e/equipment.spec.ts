@@ -132,7 +132,9 @@ test("filtering by make, model and type", async ({ page }) => {
 
   // The Make facet groups spellings that differ only in case.
   await page.getByRole("combobox", { name: /^Make/ }).click()
-  await expect(page.getByRole("option", { name: /GRUNDFOS/ })).toBeVisible()
+  // "GRUNDFOS" and "Grundfos" are one option; "GRUNDFOSE" is a different spelling and stays separate.
+  await expect(page.getByRole("option", { name: /^grundfos\b/i })).toHaveCount(1)
+  await expect(page.getByRole("option", { name: /^GRUNDFOSE\b/ })).toBeVisible()
   await page.keyboard.press("Escape")
 })
 

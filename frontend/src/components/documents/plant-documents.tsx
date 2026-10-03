@@ -43,7 +43,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { apiUrl, reasonProblem } from "@/lib/api/client"
+import { ApiError, apiUrl, reasonProblem } from "@/lib/api/client"
 import { useDocumentCategories, usePlantDocumentWrite, usePlantDocuments } from "@/lib/api/hooks"
 import type { PlantDocument } from "@/lib/api/types"
 import { useSession } from "@/lib/auth/session-context"
@@ -147,8 +147,10 @@ function EditDocumentDialog({
                   reason.trim() || null,
                 )
                 onOpenChange(false)
-              } catch {
-                /* a toast has already been shown */
+              } catch (e) {
+                // A toast has already been shown. On a conflict the library has been reloaded, and
+                // this form still holds the old copy: close it so the next edit starts from the latest.
+                if (e instanceof ApiError && e.isConflict) onOpenChange(false)
               } finally {
                 setBusy(false)
               }
@@ -313,6 +315,8 @@ export function PlantDocuments() {
         </Select>
         {canEdit && (
           <UploadDocumentDialog
+            // Remounted per filter, so the form starts in the category being viewed.
+            key={category}
             info={info.data}
             existing={data?.items ?? []}
             defaultCategory={category === "all" ? undefined : (category as PlantDocument["category"])}
