@@ -1,6 +1,6 @@
 "use client"
 
-import { Factory, History, LayoutDashboard, List, Moon, Sun, Users } from "lucide-react"
+import { Factory, History, LayoutDashboard, List, Moon, PackageSearch, Sun, Users } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
@@ -33,6 +33,13 @@ import { UserMenu } from "./user-menu"
 const NAV = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard, match: (p: string) => p === "/", admin: false },
   { href: "/plants", label: "Plants", icon: List, match: (p: string) => p.startsWith("/plants"), admin: false },
+  {
+    href: "/equipment",
+    label: "Equipment",
+    icon: PackageSearch,
+    match: (p: string) => p.startsWith("/equipment"),
+    admin: false,
+  },
   { href: "/users", label: "Users", icon: Users, match: (p: string) => p.startsWith("/users"), admin: true },
 ]
 

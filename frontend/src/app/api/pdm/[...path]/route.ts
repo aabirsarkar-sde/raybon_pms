@@ -10,8 +10,18 @@ import { endSession, getAccessToken } from "@/lib/auth/session"
 import { apiBaseUrl } from "@/lib/server/pdm"
 
 const SEGMENT = /^[A-Za-z0-9_-]+$/
-const FORWARD_REQUEST_HEADERS = ["content-type", "x-change-reason", "x-request-id"]
-const FORWARD_RESPONSE_HEADERS = ["content-type", "x-request-id"]
+const FORWARD_REQUEST_HEADERS = ["content-type", "content-length", "x-change-reason", "x-request-id"]
+// content-disposition and etag are needed so document downloads keep their file
+// name and can be revalidated; the rest are the API's own cache/sniffing rules.
+const FORWARD_RESPONSE_HEADERS = [
+  "content-type",
+  "content-length",
+  "content-disposition",
+  "cache-control",
+  "etag",
+  "x-content-type-options",
+  "x-request-id",
+]
 const MUTATING = new Set(["POST", "PUT", "PATCH", "DELETE"])
 
 type Ctx = { params: Promise<{ path: string[] }> }
@@ -40,9 +50,12 @@ async function forward(request: NextRequest, ctx: Ctx): Promise<Response> {
     upstream = await fetch(url, {
       method: request.method,
       headers,
-      body: MUTATING.has(request.method) ? await request.text() : undefined,
+      // Streamed, not read as text: document uploads are binary and can be large,
+      // and `duplex: "half"` is what fetch requires to send a request body stream.
+      body: MUTATING.has(request.method) ? request.body : undefined,
+      duplex: "half",
       cache: "no-store",
-    })
+    } as RequestInit & { duplex: "half" })
   } catch {
     return Response.json({ detail: "The Plant Data API is unreachable" }, { status: 503 })
   }
@@ -54,7 +67,8 @@ async function forward(request: NextRequest, ctx: Ctx): Promise<Response> {
     const v = upstream.headers.get(h)
     if (v !== null) out.set(h, v)
   }
-  const body = upstream.status === 204 ? null : await upstream.arrayBuffer()
+  // Streamed back so a large drawing is not held in memory on the way to the browser.
+  const body = upstream.status === 204 ? null : upstream.body
   return new Response(body, { status: upstream.status, headers: out })
 }
 

@@ -105,6 +105,8 @@ export interface PlantDoc {
   updated_at: string
   modules: ModuleRow[]
   sections: Record<SectionKey, Section<Row | FilterRow | HpGroupRow>>
+  /** Number of documents in this plant's library. */
+  documents: number
   links: Record<string, string>
 }
 
@@ -119,6 +121,7 @@ export interface PlantListItem {
   site_contact_number: Text
   zone: { id: number; name: string } | null
   has_changes: boolean
+  documents: number
   counts: Record<SectionKey, number>
   created_at: string
   updated_at: string
@@ -192,4 +195,153 @@ export interface StructuredRecord {
   filters: { position: number; name: Text; values: Text[] }[] | null
   hp_pump_accessories: { position: number; group: Text; entries: { label: Text; value: Text }[] }[] | null
   legacy_counts: Record<string, number | null>
+}
+
+// ===================================================================== equipment search
+
+/** One searchable equipment list. `type` means something different in each. */
+export type EquipmentKindKey =
+  | "pumps"
+  | "motors"
+  | "instruments"
+  | "hmi_plc"
+  | "vfds"
+  | "dosing_pumps"
+  | "hp_pump_accessories"
+  | "filters"
+
+export interface EquipmentKind {
+  kind: EquipmentKindKey
+  label: string
+  /** Heading for the `type` column, e.g. "Pump code", "Instrument". */
+  type_label: string
+  /** Collection slug, for linking to the section on the plant page. */
+  slug: string
+  section: SectionKey
+  has_make: boolean
+  has_model: boolean
+}
+
+export interface EquipmentKindCount extends EquipmentKind {
+  items: number
+  plants: number
+}
+
+/** A matching equipment row. Values are verbatim, as everywhere else. */
+export interface EquipmentMatch {
+  kind: EquipmentKindKey
+  id: number
+  position: number
+  type: Text
+  make: Text
+  model: Text
+  /** Extra verbatim values: motor kW/Amp, filter values, accessory group. */
+  detail: { motor_kw?: string; motor_amp?: string; values?: string[]; group?: string; label?: string }
+}
+
+export interface EquipmentPlantGroup {
+  plant: {
+    id: number
+    legacy_plant_id: number | null
+    name: string
+    display_name: Text
+    serial_number: Text
+    capacity: Text
+    zone: { id: number; name: string } | null
+  }
+  /** Total matches in this plant (`matches` may be capped). */
+  items: number
+  matches: EquipmentMatch[]
+}
+
+export interface ZoneCount {
+  zone: { id: number; name: string }
+  items: number
+  plants: number
+}
+
+/** One choice in a Make / Model / Type filter. */
+export interface FacetValue {
+  value: string
+  items: number
+  plants: number
+  /** How many spellings differing only in case this option covers. */
+  spellings: number
+}
+
+export type FacetDimension = "make" | "model" | "type"
+
+export interface EquipmentSearchResult {
+  /** Honours every filter. */
+  summary: { items: number; plants: number; zones: number }
+  plants: Page<EquipmentPlantGroup>
+  /** Every zone, counted ignoring the zone filter so the zones stay comparable. */
+  zones: ZoneCount[]
+  unzoned: { items: number; plants: number }
+  /** Every kind, counted ignoring the kind filter. */
+  kinds: EquipmentKindCount[]
+  /** Each facet is counted ignoring its own selection. */
+  facets: Record<FacetDimension, FacetValue[]>
+  facets_truncated: FacetDimension[]
+  filters: {
+    q: string | null
+    kind: string[]
+    make: string[]
+    model: string[]
+    type: string[]
+    zone_id: number[]
+    zone: string[]
+    unzoned: boolean
+  }
+  sort: string
+}
+
+// ===================================================================== documents
+
+export type DocumentCategory =
+  | "pid"
+  | "electrical"
+  | "mechanical"
+  | "layout"
+  | "manual"
+  | "datasheet"
+  | "report"
+  | "certificate"
+  | "photo"
+  | "other"
+
+export interface PlantDocument {
+  id: number
+  plant_id: number
+  category: DocumentCategory
+  category_label: string
+  title: string
+  description: string | null
+  file_name: string
+  extension: string
+  content_type: string
+  byte_size: number
+  sha256: string
+  /** True when the browser may show it instead of downloading it. */
+  can_preview: boolean
+  uploaded_by: string | null
+  created_at: string
+  updated_at: string
+  href: string
+  download_href: string
+}
+
+export interface PlantDocumentList {
+  items: PlantDocument[]
+  total: number
+  /** Counts for the whole library, not just the filtered view. */
+  counts: Partial<Record<DocumentCategory, number>>
+  total_bytes: number
+}
+
+export interface DocumentCategoryInfo {
+  items: { key: DocumentCategory; label: string }[]
+  allowed_extensions: string[]
+  max_bytes: number
+  storage: "db" | "fs"
 }

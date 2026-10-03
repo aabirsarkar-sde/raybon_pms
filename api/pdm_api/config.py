@@ -23,6 +23,12 @@ class Settings:
     pool_min_size: int = 1
     pool_max_size: int = 10
     session_hours: float = 12
+    # Plant document library (see pdm_api/documents.py).
+    #   'db' keeps the files in PostgreSQL: nothing else to deploy or back up.
+    #   'fs' keeps them under document_root, for libraries of large drawings.
+    document_storage: str = "db"
+    document_root: Path | None = None
+    document_max_mb: int = 25
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -32,12 +38,16 @@ class Settings:
         # Optional: static API tokens for scripts/service accounts. People sign in with a username and password.
         tokens_file = os.environ.get("PDM_API_TOKENS_FILE")
         entries = json.loads(Path(tokens_file).read_text(encoding="utf-8")) if tokens_file else []
+        root = os.environ.get("PDM_DOCUMENT_ROOT")
         return cls(
             database_url=dsn,
             tokens=load_tokens(entries),
             pool_min_size=int(os.environ.get("PDM_DB_POOL_MIN", 1)),
             pool_max_size=int(os.environ.get("PDM_DB_POOL_MAX", 10)),
             session_hours=float(os.environ.get("PDM_SESSION_HOURS", 12)),
+            document_storage=os.environ.get("PDM_DOCUMENT_STORAGE", "db"),
+            document_root=Path(root).expanduser().resolve() if root else None,
+            document_max_mb=int(os.environ.get("PDM_DOCUMENT_MAX_MB", 25)),
         )
 
 

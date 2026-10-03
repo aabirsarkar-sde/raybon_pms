@@ -18,8 +18,11 @@ from psycopg import errors as pgerr
 
 from .config import Settings
 from .db import make_pool
+from .documents import Storage
 from .account_routes import router as account_router
+from .document_routes import router as document_router
 from .routes import router
+from .search_routes import router as search_router
 
 log = logging.getLogger("pdm_api")
 _REQUEST_ID = re.compile(r"^[A-Za-z0-9._:-]{1,100}$")
@@ -45,6 +48,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     )
     app.state.settings = settings
     app.state.pool = pool
+    app.state.documents = Storage(settings.document_storage, settings.document_root,
+                                  settings.document_max_mb * 1024 * 1024)
 
     @app.middleware("http")
     async def request_id(request: Request, call_next):
@@ -82,5 +87,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return {"status": "ok"}
 
     app.include_router(account_router)
+    app.include_router(search_router)
+    app.include_router(document_router)
     app.include_router(router)
     return app

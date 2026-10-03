@@ -15,25 +15,40 @@ export class ApiError extends Error {
   }
 }
 
-type Params = Record<string, string | number | boolean | null | undefined>
-
 export interface RequestOptions {
   method?: "GET" | "POST" | "PUT" | "PATCH" | "DELETE"
   body?: unknown
-  params?: Params
+  params?: ListParams
   /** Sent as X-Change-Reason and stored in the audit log. */
   reason?: string | null
   signal?: AbortSignal
 }
 
-export async function api<T>(path: string, opts: RequestOptions = {}): Promise<T> {
+/** Repeatable query parameters, e.g. ?zone_id=1&zone_id=4&kind=pumps. */
+export type ListParams = Record<string, string | number | boolean | null | undefined | (string | number)[]>
+
+/** Query string for a path, with array values repeated rather than joined. */
+export function queryString(params: ListParams | undefined): string {
   const qs = new URLSearchParams()
-  for (const [k, v] of Object.entries(opts.params ?? {})) {
-    if (v !== undefined && v !== null && v !== "") qs.set(k, String(v))
+  for (const [k, v] of Object.entries(params ?? {})) {
+    if (v === undefined || v === null || v === "") continue
+    if (Array.isArray(v)) v.forEach((item) => qs.append(k, String(item)))
+    else qs.set(k, String(v))
   }
-  const url = `/api/pdm/${path.replace(/^\/+/, "")}${qs.size ? `?${qs}` : ""}`
+  return qs.size ? `?${qs}` : ""
+}
+
+/** The proxy path for a resource, usable as an <a href> (the session cookie travels with it). */
+export function apiUrl(path: string, params?: ListParams): string {
+  return `/api/pdm/${path.replace(/^\/+/, "")}${queryString(params)}`
+}
+
+export async function api<T>(path: string, opts: RequestOptions = {}): Promise<T> {
+  const url = apiUrl(path, opts.params)
   const headers: Record<string, string> = { "X-PDM-Client": "web" }
-  if (opts.body !== undefined) headers["Content-Type"] = "application/json"
+  // FormData sets its own multipart Content-Type, boundary included.
+  const isForm = typeof FormData !== "undefined" && opts.body instanceof FormData
+  if (opts.body !== undefined && !isForm) headers["Content-Type"] = "application/json"
   const reason = opts.reason?.trim()
   if (reason) headers["X-Change-Reason"] = reason
 
@@ -42,7 +57,7 @@ export async function api<T>(path: string, opts: RequestOptions = {}): Promise<T
     res = await fetch(url, {
       method: opts.method ?? "GET",
       headers,
-      body: opts.body === undefined ? undefined : JSON.stringify(opts.body),
+      body: opts.body === undefined ? undefined : isForm ? (opts.body as FormData) : JSON.stringify(opts.body),
       signal: opts.signal,
       cache: "no-store",
     })

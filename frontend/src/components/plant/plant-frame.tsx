@@ -1,6 +1,15 @@
 "use client"
 
-import { ChevronRight, Database, FileClock, LayoutList, MoreHorizontal, SearchX, Trash2 } from "lucide-react"
+import {
+  ChevronRight,
+  Database,
+  FileClock,
+  FolderOpen,
+  LayoutList,
+  MoreHorizontal,
+  SearchX,
+  Trash2,
+} from "lucide-react"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
@@ -74,9 +83,12 @@ export function PlantFrame({ id, children }: { id: number; children: React.React
 
   const c = plant.current
   const tabs = [
-    { href: base, label: "Plant data", icon: LayoutList },
-    { href: `${base}/history`, label: "History", icon: FileClock },
-    ...(plant.legacy_plant_id !== null ? [{ href: `${base}/legacy`, label: "Legacy source", icon: Database }] : []),
+    { href: base, label: "Plant data", icon: LayoutList, count: undefined as number | undefined },
+    { href: `${base}/documents`, label: "Documents", icon: FolderOpen, count: plant.documents },
+    { href: `${base}/history`, label: "History", icon: FileClock, count: undefined },
+    ...(plant.legacy_plant_id !== null
+      ? [{ href: `${base}/legacy`, label: "Legacy source", icon: Database, count: undefined }]
+      : []),
   ]
   const onData = pathname === base
 
@@ -176,6 +188,11 @@ export function PlantFrame({ id, children }: { id: number; children: React.React
                   )}
                 >
                   <t.icon className="size-4" /> {t.label}
+                  {t.count !== undefined && t.count > 0 && (
+                    <Badge variant="secondary" className="tabular">
+                      {t.count}
+                    </Badge>
+                  )}
                 </Link>
               )
             })}

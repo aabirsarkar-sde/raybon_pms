@@ -145,10 +145,13 @@ def plant_document(conn, plant_id: int) -> dict:
             "legacy": None if sec is None else {"rendered": sec["rendered_in_legacy"], "count": sec["legacy_count"]},
             "items": list_items(conn, coll, plant_id),
         }
+    doc["documents"] = conn.execute(
+        "SELECT count(*) AS n FROM plant_documents WHERE plant_id = %s", (plant_id,)).fetchone()["n"]
     doc["links"] = {
         "self": f"{API_PREFIX}/plants/{plant_id}",
         "legacy_snapshot": f"{API_PREFIX}/plants/{plant_id}/legacy",
         "history": f"{API_PREFIX}/plants/{plant_id}/history",
+        "documents": f"{API_PREFIX}/plants/{plant_id}/documents",
     }
     return doc
 
@@ -159,7 +162,8 @@ def plant_counts_sql() -> str:
     return ", ".join(parts)
 
 
-def _like(s: str) -> str:
+def like_pattern(s: str) -> str:
+    """A LIKE/ILIKE "contains" pattern with the wildcards in `s` escaped."""
     return "%" + s.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_") + "%"
 
 
@@ -177,7 +181,7 @@ def search_plants(conn, *, q=None, zone_id=None, zone=None, serial_number=None, 
     where, args = [], []
     if q:
         where.append("(p.name ILIKE %s OR p.display_name ILIKE %s OR p.serial_number ILIKE %s)")
-        args += [_like(q)] * 3
+        args += [like_pattern(q)] * 3
     if zone_id is not None:
         where.append("p.zone_id = %s"); args.append(zone_id)
     if zone:
@@ -193,7 +197,7 @@ def search_plants(conn, *, q=None, zone_id=None, zone=None, serial_number=None, 
     if modified is not None:
         where.append(("" if modified else "NOT ") + "EXISTS (SELECT 1 FROM change_log c WHERE c.plant_id = p.id)")
     if equipment:
-        pat = _like(equipment)
+        pat = like_pattern(equipment)
         subs = []
         for c in PLANT_COLLECTIONS:
             cols = [f for f in c.field_names if f not in ("value", "unit", "motor_kw", "motor_amp", "parameter_name")]
@@ -217,6 +221,7 @@ def search_plants(conn, *, q=None, zone_id=None, zone=None, serial_number=None, 
                    p.site_contact_number, p.zone_id, z.name AS zone_name, p.created_at, p.updated_at,
                    (p.legacy_plant_id IS NOT NULL) AS is_legacy,
                    EXISTS (SELECT 1 FROM change_log c WHERE c.plant_id = p.id) AS has_changes,
+                   (SELECT count(*) FROM plant_documents d WHERE d.plant_id = p.id) AS document_count,
                    {plant_counts_sql()}
             {base} ORDER BY {order} LIMIT %s OFFSET %s""", args + [limit, offset]).fetchall()
     items = []
@@ -228,6 +233,7 @@ def search_plants(conn, *, q=None, zone_id=None, zone=None, serial_number=None, 
             "capacity": r["capacity"], "site_contact_number": r["site_contact_number"],
             "zone": None if r["zone_id"] is None else {"id": r["zone_id"], "name": r["zone_name"]},
             "has_changes": r["has_changes"],
+            "documents": r["document_count"],
             "counts": {c.section: r[c.section] for c in PLANT_COLLECTIONS},
             "created_at": r["created_at"], "updated_at": r["updated_at"],
             "href": f"{API_PREFIX}/plants/{r['id']}",

@@ -38,4 +38,13 @@ BEGIN
     END IF;
 END $$;
 
+-- Plant document library (migration 002).
+DO $$
+BEGIN
+    IF to_regclass('public.plant_documents') IS NOT NULL THEN
+        GRANT INSERT, UPDATE, DELETE ON plant_documents TO pdm_api;
+        GRANT INSERT, UPDATE, DELETE ON plant_document_blobs TO pdm_api;
+    END IF;
+END $$;
+
 GRANT USAGE ON ALL SEQUENCES IN SCHEMA public TO pdm_api;
