@@ -40,11 +40,13 @@ function ChangeLine({ c }: { c: Change }) {
           {" · "}
           <span className="font-medium text-foreground">{c.field}</span>
         </span>
-        <span className="inline-flex flex-wrap items-center gap-1.5">
+        {/* A long unbroken value (a file checksum, a part number) must wrap inside
+            the row instead of widening the page: min-w-0 lets the flex item shrink. */}
+        <span className="inline-flex min-w-0 flex-wrap items-center gap-1.5 [overflow-wrap:anywhere]">
           <span className="line-through decoration-muted-foreground/60">
             <Val v={c.old} />
           </span>
-          <ArrowRight className="size-3 text-muted-foreground" />
+          <ArrowRight className="size-3 shrink-0 text-muted-foreground" />
           <Val v={c.new} />
         </span>
       </li>
@@ -71,9 +73,9 @@ function ChangeLine({ c }: { c: Change }) {
       {c.values.length > 0 && (
         <dl className="ml-5 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-muted-foreground">
           {c.values.map(([k, v]) => (
-            <div key={k}>
+            <div key={k} className="min-w-0">
               <dt className="inline">{k}: </dt>
-              <dd className="inline text-foreground/80">
+              <dd className="inline text-foreground/80 [overflow-wrap:anywhere]">
                 <ValueText value={v} />
               </dd>
             </div>
